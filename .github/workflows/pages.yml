@@ -29,6 +29,8 @@ jobs:
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Check visitor counter
+        run: node --test tests/*.test.js
       - name: Build review version
         run: node scripts/build-github-pages.mjs
         env:

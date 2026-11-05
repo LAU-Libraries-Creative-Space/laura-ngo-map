@@ -43,7 +43,9 @@ Contact the receiving NGO to confirm its location, current capacity, accepted fo
 
 The requested update removes NGO-specific illustrations, fridge indicators and filters, donation preparation/recording tools, and directory downloads. The app retains its current working name and displays “Last updated version 2026.”
 
-GitHub Pages hosts the interactive map as a static review website. **Shared visitor tracking is not enabled in this preview** and the interface states this explicitly. The Windows/server version retains the visitor API; donation records are never used as visitor counts.
+Foundations wishing to be added can contact **[Nfs@lau.edu.lb](mailto:Nfs@lau.edu.lb)** through the listing-request section at the bottom of the app. The directory and NGO detail panels ask visitors to call the foundation directly for clarification.
+
+**Shared estimated visitor tracking is enabled.** A browser is counted once using browser storage; the “Refresh count” button only reads the shared total. Clearing browser data or using another browser may add another visit. Donation records are never used as visitor counts. See [visitor tracking](docs/visitor-tracking.md) for the service, privacy and accuracy details.
 
 ## Collaboration and credits
 
@@ -72,7 +74,7 @@ Pushes to `main` run the GitHub Pages workflow. It reads the repository’s actu
 npm run build:github -- /laura-ngo-map/
 ```
 
-See [GitHub publication details](DEPLOY-TO-GITHUB.md) for the workflow and the visitor-counter limitation. Street-map tiles require an internet connection; terrain, boundaries, NGO data and the LAU logo are bundled with the app.
+See [GitHub publication details](DEPLOY-TO-GITHUB.md) for the workflow. Each Pages build publishes a content-versioned module graph so the app loads the updated scripts and styles. Street-map tiles require an internet connection; terrain, boundaries, NGO data and the LAU logo are bundled with the app.
 
 ---
 

@@ -13,3 +13,14 @@
 .visitor-card .impact-main small,.visitor-card .visitor-explanation{font-size:10px;line-height:1.7;color:#b2c7bb}
 .visitor-card .impact-bottom{padding-top:13px;margin-top:0;border-top:1px solid #ffffff20}
 @media(max-width:760px){.visitor-card .impact-main{margin:18px 0 15px}.visitor-card .impact-main>strong{font-size:42px}}
+
+/* Foundation requests and contact clarification */
+.listing-contact{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:30px 0 34px;border-top:1px solid #36534026}
+.listing-contact h2{font-family:Manrope,sans-serif;font-size:19px;font-weight:500;margin:0 0 8px;color:#365340;letter-spacing:-.4px}
+.listing-contact p{font-size:12px;line-height:1.7;margin:0;color:#5e6e62}
+.listing-contact>a{flex-shrink:0;border:1px solid #36534040;border-radius:100px;padding:12px 19px;color:#365340;font-size:13px;font-weight:600;text-decoration:none;transition:background .2s,color .2s}
+.listing-contact>a:hover{background:#365340;color:white}
+.sidebar-foot{align-items:flex-start}.sidebar-foot>span{line-height:1.6}
+@media(max-width:760px){.listing-contact{align-items:flex-start;flex-direction:column;gap:18px;padding:26px 0}.listing-contact h2{font-size:18px}.listing-contact>a{padding:11px 17px}}
+
+.visitor-card .impact-bottom{display:flex;flex-wrap:wrap;align-items:center;gap:12px}.visitor-card .visitor-explanation{flex:1;min-width:170px}.visitor-card .visitor-refresh{border:1px solid #ffffff40;border-radius:100px;background:transparent;color:#f0f4e6;padding:7px 12px;font-size:10px;cursor:pointer}.visitor-card .visitor-refresh:hover{background:#ffffff14}.visitor-card .visitor-refresh:disabled{opacity:.6;cursor:wait}.visitor-card .visitor-privacy{display:block;flex-basis:100%;font-size:9px;color:#b2c7bb;line-height:1.6}

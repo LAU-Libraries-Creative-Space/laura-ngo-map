@@ -1,3 +1,4 @@
+import { loadVisitorCount } from './visitor-tracking.js';
 const __vite__mapDeps = (i, m = __vite__mapDeps, d = m.f || (m.f = ["assets/MapView-CtthpP00.js", "assets/MapView-qvkd0SPb.css"])) => i.map(i => d[i]);
 var e = Object.create,
   t = Object.defineProperty,
@@ -10382,33 +10383,46 @@ function Ze(e) {
   return t ? `961` + t[1].replace(/\D/g, ``).replace(/^0/, ``) : null;
 }
 function Qe() {
-  let [count, setCount] = (0, b.useState)(null);
+  const [count, setCount] = (0, b.useState)(null);
+  const [busy, setBusy] = (0, b.useState)(true);
+  const [failed, setFailed] = (0, b.useState)(false);
   (0, b.useEffect)(() => {
     let active = true;
-    fetch('/api/visitors', {
-      method: 'POST',
-      credentials: 'same-origin',
-      headers: {
-        Accept: 'application/json'
+    loadVisitorCount().then(value => {
+      if (active) {
+        setCount(value);
+        setFailed(false);
       }
-    }).then(r => {
-      if (!r.ok) throw Error();
-      return r.json();
-    }).then(data => {
-      if (active && Number.isSafeInteger(data.visitors) && data.visitors >= 0) setCount(data.visitors);
-    }).catch(() => {});
+    }).catch(() => {
+      if (active) setFailed(true);
+    }).finally(() => {
+      if (active) setBusy(false);
+    });
     return () => {
       active = false;
     };
   }, []);
+  const refresh = async () => {
+    setBusy(true);
+    try {
+      setCount(await loadVisitorCount({
+        refreshOnly: true
+      }));
+      setFailed(false);
+    } catch {
+      setFailed(true);
+    } finally {
+      setBusy(false);
+    }
+  };
   return (0, j.jsxs)('section', {
     className: 'impact-card visitor-card',
     'aria-label': 'Map visitors',
-    children: [(0, j.jsxs)('div', {
+    children: [(0, j.jsx)('div', {
       className: 'impact-top',
-      children: [(0, j.jsx)('small', {
+      children: (0, j.jsx)('small', {
         children: 'MAP VISITORS'
-      })]
+      })
     }), (0, j.jsxs)('div', {
       className: 'impact-main',
       children: [(0, j.jsx)('strong', {
@@ -10419,15 +10433,26 @@ function Qe() {
         children: [(0, j.jsx)('b', {
           children: 'Visitors'
         }), (0, j.jsx)('small', {
-          children: 'Anonymous browsers since counting began'
+          children: 'Estimated browser visitors since tracking began'
         })]
       })]
-    }), (0, j.jsx)('div', {
+    }), (0, j.jsxs)('div', {
       className: 'impact-bottom',
-      children: (0, j.jsx)('small', {
+      children: [(0, j.jsx)('small', {
         className: 'visitor-explanation',
-        children: count === null ? 'Visitor count temporarily unavailable.' : 'Refreshing does not add another visitor.'
-      })
+        role: failed ? 'status' : undefined,
+        children: failed ? 'Visitor count is temporarily unavailable. Please try refreshing the count.' : busy && count === null ? 'Loading visitor count…' : 'Refreshing does not add another visitor.'
+      }), (0, j.jsx)('button', {
+        type: 'button',
+        className: 'visitor-refresh',
+        onClick: refresh,
+        disabled: busy,
+        'aria-label': 'Refresh visitor count',
+        children: busy ? 'Updating…' : 'Refresh count'
+      }), (0, j.jsx)('small', {
+        className: 'visitor-privacy',
+        children: 'One count per browser. Clearing browser data may count again.'
+      })]
     })]
   });
 }
@@ -11077,13 +11102,7 @@ function dt() {
             children: [(0, j.jsx)(E, {
               size: 13
             }), (0, j.jsx)(`span`, {
-              children: `Please call before you donate.`
-            }), (0, j.jsx)(`button`, {
-              onClick: () => y(`data`),
-              "aria-label": `About the directory data`,
-              children: (0, j.jsx)(C, {
-                size: 14
-              })
+              children: `For clarification, please call the foundation you wish to contact.`
             })]
           })]
         }), (0, j.jsxs)(`div`, {
@@ -11222,13 +11241,6 @@ function dt() {
             className: `nfs-mark`,
             children: `NFS`
           }), ` A Nutrition & Food Sciences initiative`]
-        }), (0, j.jsxs)(`span`, {
-          children: [`For Dr. Rana Rizk `, (0, j.jsx)(`i`, {}), ` With care, for our communities.`]
-        }), (0, j.jsxs)(`button`, {
-          onClick: () => y(`data`),
-          children: [`About the data `, (0, j.jsx)(C, {
-            size: 13
-          })]
         })]
       }), (0, j.jsxs)(`section`, {
         id: `how-it-works`,
@@ -11288,6 +11300,19 @@ function dt() {
             })]
           })]
         })]
+      }), (0, j.jsxs)('section', {
+        className: 'listing-contact',
+        'aria-label': 'Foundation listing requests',
+        children: [(0, j.jsxs)('div', {
+          children: [(0, j.jsx)('h2', {
+            children: 'Would your foundation like to be listed?'
+          }), (0, j.jsx)('p', {
+            children: 'To request adding your foundation to the map, email the NFS team.'
+          })]
+        }), (0, j.jsx)('a', {
+          href: 'mailto:Nfs@lau.edu.lb?subject=Foundation%20listing%20request',
+          children: 'Nfs@lau.edu.lb'
+        })]
       }), (0, j.jsxs)(`footer`, {
         children: [(0, j.jsxs)(`a`, {
           className: `brand`,
@@ -11305,9 +11330,6 @@ function dt() {
             children: [`About LAURA `, (0, j.jsx)(E, {
               size: 13
             })]
-          }), (0, j.jsx)(`button`, {
-            onClick: () => y(`data`),
-            children: `Directory & sources`
           }), (0, j.jsxs)(`button`, {
             onClick: _t,
             children: [`Share the map `, (0, j.jsx)(Se, {
@@ -11541,7 +11563,7 @@ function ft({
         })]
       }), (0, j.jsx)(`p`, {
         className: `call-note`,
-        children: `Confirm food types, quantities, receiving times, and the exact drop-off point before travelling.`
+        children: `For further clarification, please call this foundation directly. Confirm accepted food, quantities, receiving times and the exact drop-off point before travelling.`
       }), (0, j.jsxs)(`details`, {
         className: `original-contact`,
         children: [(0, j.jsx)(`summary`, {

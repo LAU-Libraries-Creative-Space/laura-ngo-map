@@ -25,7 +25,7 @@ The supplied v1.2 map, its 63 NGO entries, terrain and street views, filters, co
 
 ## Visitor counter
 
-GitHub Pages serves static files and cannot run the Node.js visitor API. This review build displays an em dash and explicitly says visitor tracking is not enabled. It makes no counter requests and does not substitute donation totals or a local-only number. The Windows app and server-capable build retain their working visitor API. A shared production counter can be connected later through a separate backend; no backend credentials belong in GitHub Pages files.
+GitHub Pages serves static files and cannot run the Node.js visitor API. The Pages build now configures the public Abacus aggregate counter, with a browser-storage marker to avoid counting ordinary reloads more than once. Refreshing the displayed count sends a read-only request. No API secrets are embedded in the website. The Windows/server build continues using its same-origin visitor API. See [visitor tracking](docs/visitor-tracking.md) for configuration, verification and limitations.
 
 ## Build locally
 
