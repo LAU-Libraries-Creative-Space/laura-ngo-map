@@ -1,0 +1,10 @@
+node_modules/
+dist/
+github-pages/
+.sites-runtime/
+*.log
+
+.local/
+.env
+.env.local
+.vercel/

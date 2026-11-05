@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const source=path.join(root,'app-source'),destination=path.join(root,'dist');
+const data=JSON.parse(await fs.readFile(path.join(source,'data/ngos.json'),'utf8'));
+if(data.length!==63||new Set(data.map(n=>n.id)).size!==63)throw Error('Expected all 63 unique NGO records');
+const main=await fs.readFile(path.join(source,'assets/index-C_9D0gYg.js'),'utf8');
+for(const removed of ['Fridge availability','Record completed donation','Prepare my donation','Download directory','laura-completed-donations-v1'])if(main.includes(removed))throw Error('Removed feature remains: '+removed);
+await fs.cp(source,destination,{recursive:true});
+console.log('Built the supplied v1.2 folder: 63 NGOs, visitor counter, no fridge/planner/recording/download controls.');

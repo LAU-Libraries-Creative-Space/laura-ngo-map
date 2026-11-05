@@ -1,0 +1,7 @@
+.git
+.local
+.sites-runtime
+node_modules
+.env
+.env.local
+tests
