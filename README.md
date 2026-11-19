@@ -47,6 +47,8 @@ The directory notice and complete [Terms of Use and Disclaimer](https://lau-libr
 
 The 3D map shows foundation information after a pin is selected. It has no floating name labels. Cluster counts are camera-facing 3D badges attached to the heads, and the heads are the primary click/touch targets. Selection retains the pin touched on pointer-down and distinguishes taps from drags and pinches. Phone styles provide larger targets, a full-width scrolling NGO detail panel and readable contact/notice text. The render loop runs at the display's animation rate, reuses static shadows and textures, and stabilizes clustering around zoom thresholds.
 
+Cluster pins open a scrollable foundation chooser within the map on phones and desktops. Choosing a foundation opens its details. Nearby search uses your device location, retries GPS after a network-location failure, and explains permission or connection problems. A starting-town option is always available; the location request can be cancelled and coordinates stay in browser memory.
+
 The requested update removes NGO-specific illustrations, fridge indicators and filters, donation preparation/recording tools, and directory downloads. The app retains its current working name and displays “Last updated version 2026.”
 
 Foundations wishing to be added can contact **[Nfs@lau.edu.lb](mailto:Nfs@lau.edu.lb)** through the listing-request section at the bottom of the app. The directory and NGO detail panels ask visitors to call the foundation directly for clarification.

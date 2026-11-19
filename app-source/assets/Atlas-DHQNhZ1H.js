@@ -17348,7 +17348,13 @@ function iu({
     [D, O] = (0, _.useState)(!1),
     [k, A] = (0, _.useState)(`day`),
     [j, M] = (0, _.useState)(null),
-    [ee, te] = (0, _.useState)(null);
+    [ee, te] = (0, _.useState)(null),
+    clusterPanel = (0, _.useRef)(null);
+  (0, _.useEffect)(() => {
+    if (!j) return;
+    const frame = requestAnimationFrame(() => clusterPanel.current?.querySelector(`.atlas-cluster-list button`)?.focus({preventScroll: true}));
+    return () => cancelAnimationFrame(frame);
+  }, [j]);
   w.current = {
     items: t,
     onSelect: c,
@@ -17780,22 +17786,32 @@ function iu({
       target: `_blank`,
       rel: `noreferrer`,
       children: `Terrain: Mapzen/Tilezen · USGS · NOAA | Boundaries: geoBoundaries`
-    }), j && (0, $.jsxs)(`div`, {
+    }), j && (0, $.jsxs)(`section`, {
       className: `atlas-tooltip`,
-      children: [(0, $.jsx)(`button`, {
-        "aria-label": `Close area NGOs`,
-        onClick: () => M(null),
-        children: (0, $.jsx)(i, {
-          size: 13
-        })
-      }), (0, $.jsxs)(`strong`, {
-        children: [j.length, ` NGOs in this area`]
-      }), j.map(e => (0, $.jsx)(`button`, {
-        onClick: () => {
-          c(e), M(null);
-        },
-        children: e.name
-      }, e.id))]
+      ref: clusterPanel,
+      role: `dialog`,
+      "aria-labelledby": `atlas-cluster-title`,
+      onKeyDown: event => { if (event.key === `Escape`) { event.stopPropagation(); M(null); } },
+      children: [(0, $.jsxs)(`div`, {
+        className: `atlas-cluster-header`,
+        children: [(0, $.jsxs)(`strong`, {
+          id: `atlas-cluster-title`,
+          children: [j.length, ` foundations in this area`]
+        }), (0, $.jsx)(`button`, {
+          type: `button`,
+          "aria-label": `Close area NGOs`,
+          onClick: () => M(null),
+          children: (0, $.jsx)(i, {size: 20})
+        })]
+      }), (0, $.jsx)(`p`, {className: `atlas-cluster-hint`, children: `Choose a foundation to see its details.`}),
+      (0, $.jsx)(`div`, {
+        className: `atlas-cluster-list`,
+        children: j.map(e => (0, $.jsx)(`button`, {
+          type: `button`,
+          onClick: () => { c(e), M(null); },
+          children: e.name
+        }, e.id))
+      })]
     })]
   });
 }

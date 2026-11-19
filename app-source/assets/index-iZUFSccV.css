@@ -50,3 +50,19 @@
 .atlas-keyboard-pins:focus-within{z-index:8;width:min(320px,calc(100% - 24px));height:auto;max-height:50%;margin:0;left:12px;bottom:20px;overflow:auto;clip-path:none;white-space:normal;pointer-events:auto;background:#fffef8;border-radius:12px;padding:8px;box-sizing:border-box}
 .atlas-accessible-pin{display:block;width:100%;min-height:44px;padding:10px 12px;text-align:left;font-size:14px;color:#294637}.atlas-accessible-pin:focus-visible{outline:2px solid #4a7957;outline-offset:-2px}
 .atlas-canvas>canvas{touch-action:none;cursor:grab}.atlas-canvas>canvas:active{cursor:grabbing}
+
+/* Cluster chooser: reset the inherited desktop centering on every viewport. */
+.atlas-tooltip{z-index:12;top:auto;bottom:100px;left:24px;right:auto;transform:none;box-sizing:border-box;width:min(340px,calc(100% - 48px));max-width:none;max-height:min(420px,calc(100% - 180px));padding:0;overflow:auto;background:#fffef8;touch-action:pan-y;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.atlas-cluster-header{position:sticky;top:0;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;background:#fffef8;border-bottom:1px solid #dfe6d4}
+.atlas-cluster-header strong{font-size:15px;line-height:1.4;color:#243e32}
+.atlas-cluster-header button{display:flex;flex:0 0 44px;align-items:center;justify-content:center;width:44px;min-height:44px;padding:0;border-radius:8px;color:#244e40}
+.atlas-cluster-hint{font-size:14px;line-height:1.5;margin:12px 16px;color:#586b55}
+.atlas-cluster-list{padding:0 8px 8px}
+.atlas-cluster-list button{display:block;box-sizing:border-box;width:100%;min-height:48px;padding:12px 10px;text-align:left;white-space:normal;overflow-wrap:anywhere;font-size:15px;line-height:1.5;border-bottom:1px solid #e5e9dd;color:#213f32;touch-action:pan-y}
+.atlas-cluster-list button:hover,.atlas-cluster-list button:focus-visible{background:#edf3e5;outline:2px solid #486941;outline-offset:-2px;border-radius:6px}
+.location-cancel{display:block;margin:10px auto;min-height:44px;padding:8px 14px;text-decoration:underline;color:#365a31;font-size:15px}
+.modal .location-status{font-size:14px;line-height:1.6}
+@media(max-width:760px){
+ .atlas-tooltip{left:12px;right:12px;top:auto;bottom:calc(84px + env(safe-area-inset-bottom,0px));width:auto;max-width:none;max-height:min(420px,calc(100% - 176px - env(safe-area-inset-bottom,0px)));transform:none}
+ .modal .field-label select{min-height:48px;font-size:16px}
+}

@@ -1,3 +1,4 @@
+import { findCurrentLocation, locationErrorMessage } from './geolocation.js';
 import { loadVisitorCount } from './visitor-tracking.js';
 const __vite__mapDeps = (i, m = __vite__mapDeps, d = m.f || (m.f = ["assets/MapView-CtthpP00.js", "assets/MapView-qvkd0SPb.css"])) => i.map(i => d[i]);
 var e = Object.create,
@@ -10682,8 +10683,17 @@ function dt() {
     [A, Ae] = (0, b.useState)(`map`),
     [je, Ne] = (0, b.useState)(0),
     Pe = (0, b.useRef)(),
+    locationRequest = (0, b.useRef)(null),
     [He, Ue] = (0, b.useState)(`all`),
     [We, Ge] = (0, b.useState)(() => new Date());
+  (0, b.useEffect)(() => {
+    if (v !== `nearby`) {
+      locationRequest.current?.abort();
+      locationRequest.current = null;
+      O(false);
+    }
+    return () => locationRequest.current?.abort();
+  }, [v]);
   (0, b.useEffect)(() => {
     const timer = setInterval(() => Ge(new Date()), 60000);
     return () => clearInterval(timer);
@@ -10748,18 +10758,20 @@ function dt() {
       o === `all` ? e.searchParams.delete(`region`) : e.searchParams.set(`region`, o), gt(e.href, `Map link copied`);
     },
     vt = () => {
-      navigator.geolocation ? (O(!0), be(``), navigator.geolocation.getCurrentPosition(e => {
-        S({
-          label: `Your location`,
-          coords: [e.coords.longitude, e.coords.latitude]
-        }), ae(`nearby`), O(!1), y(null), nt(`Showing straight-line distances from your location`);
-      }, () => {
-        be(`Location access was unavailable. You can choose a town instead.`), O(!1);
-      }, {
-        enableHighAccuracy: !1,
-        timeout: 1e4,
-        maximumAge: 3e5
-      })) : be(`Location is unavailable. Choose a town below.`);
+      locationRequest.current?.abort();
+      const controller = new AbortController();
+      locationRequest.current = controller;
+      O(true), be(``);
+      findCurrentLocation({signal: controller.signal}).then(position => {
+        if (controller.signal.aborted) return;
+        S({label: `Your location`, coords: [position.coords.longitude, position.coords.latitude]}),
+        ne(`all`), ae(`nearby`), Ae(`map`), y(null),
+        nt(`Showing straight-line distances from your location`), bt();
+      }).catch(error => {
+        if (error?.name !== `AbortError` && !controller.signal.aborted) be(locationErrorMessage(error));
+      }).finally(() => {
+        if (locationRequest.current === controller) { locationRequest.current = null; O(false); }
+      });
     },
     yt = (0, b.useMemo)(() => [...new Map(e.map(e => [e.locationLabel, {
       label: e.locationLabel,
@@ -11428,12 +11440,22 @@ function dt() {
           className: `primary full`,
           onClick: vt,
           disabled: D,
+          "aria-busy": D,
           children: [D ? (0, j.jsx)(de, {
             className: `spin`,
             size: 17
           }) : (0, j.jsx)(fe, {
             size: 17
           }), ` `, D ? `Finding your location…` : `Use my current location`]
+        }), D && (0, j.jsx)(`button`, {
+          className: `location-cancel`,
+          onClick: () => { locationRequest.current?.abort(); locationRequest.current = null; O(false); },
+          children: `Cancel location request`
+        }), (0, j.jsx)(`p`, {
+          className: `location-status`,
+          role: `status`,
+          "aria-live": `polite`,
+          children: D ? `Allow location when your browser asks. Finding your position may take around 30 seconds.` : `On a phone, open this website directly in Safari or Chrome and allow location access when asked.`
         }), _e && (0, j.jsx)(`p`, {
           role: `alert`,
           className: `inline-warning`,
@@ -11448,7 +11470,7 @@ function dt() {
             defaultValue: ``,
             onChange: e => {
               let t = yt[Number(e.target.value)];
-              S(t), ae(`nearby`), y(null), be(``);
+              locationRequest.current?.abort(), S(t), ne(`all`), ae(`nearby`), Ae(`map`), y(null), be(``), bt();
             },
             children: [(0, j.jsx)(`option`, {
               value: ``,
