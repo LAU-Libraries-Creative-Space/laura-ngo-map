@@ -44,3 +44,9 @@
  .how-section{margin:32px 18px}.how-intro p,.steps p{font-size:14px;line-height:1.8}.steps h3{font-size:18px}.listing-contact{margin:0 18px;gap:16px}.listing-contact h2{font-size:20px}.listing-contact p{font-size:14px}footer{flex-wrap:wrap;gap:18px;padding:24px 18px}footer>p{display:block;font-size:12px}footer>div{flex-wrap:wrap;gap:16px}footer button,.terms-link{min-height:44px;font-size:14px}.modal{width:calc(100% - 24px);max-height:calc(100svh - 24px);box-sizing:border-box;padding:26px 20px}.modal p,.modal li{font-size:15px;line-height:1.8}
 }
 @media(max-width:360px){.site-header .brand small{letter-spacing:.7px}.saved-link{font-size:11px}.mode-toggle button{font-size:11px;padding:7px}.map-title{max-width:78px;font-size:10px}.intro{padding-left:16px;padding-right:16px}}
+
+/* 3D map: scene-anchored count badges; names appear after selection only. */
+.atlas-keyboard-pins{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;pointer-events:none}
+.atlas-keyboard-pins:focus-within{z-index:8;width:min(320px,calc(100% - 24px));height:auto;max-height:50%;margin:0;left:12px;bottom:20px;overflow:auto;clip-path:none;white-space:normal;pointer-events:auto;background:#fffef8;border-radius:12px;padding:8px;box-sizing:border-box}
+.atlas-accessible-pin{display:block;width:100%;min-height:44px;padding:10px 12px;text-align:left;font-size:14px;color:#294637}.atlas-accessible-pin:focus-visible{outline:2px solid #4a7957;outline-offset:-2px}
+.atlas-canvas>canvas{touch-action:none;cursor:grab}.atlas-canvas>canvas:active{cursor:grabbing}

@@ -1,3 +1,4 @@
+import {clusterStep,updateClusterBadges,drawClusterBadge} from './atlas-markers.js';
 import {attachPinInteraction,nearestProjectedPin} from './pin-interaction.js';
 import { a as e, c as t, i as n, l as r, n as i, o as a, r as o, s, t as c, u as l } from "./index-C_9D0gYg.js";
 var u = t(`Minus`, [[`path`, {
@@ -17375,7 +17376,7 @@ function iu({
           antialias: !0,
           alpha: !1,
           powerPreference: `high-performance`
-        }), t.setPixelRatio(Math.min(devicePixelRatio, innerWidth < 760 ? 1.25 : 1.65)), t.setSize(x.current.clientWidth, x.current.clientHeight), t.shadowMap.enabled = !0, t.shadowMap.type = 1, t.toneMapping = 4, t.toneMappingExposure = 1.12, t.outputColorSpace = et, x.current.prepend(t.domElement), n = new Rl(l, t.domElement), n.target.set(0, 1, 0), n.enableDamping = !0, n.dampingFactor = .055, n.minDistance = 35, n.maxDistance = 520, n.maxPolarAngle = Math.PI / 2.25, n.minPolarAngle = .14, n.autoRotateSpeed = .3, n.panSpeed = .65, a.add(new wa(`#e5f6ec`, `#274b41`, 2.4));
+        }), t.setPixelRatio(Math.min(devicePixelRatio, innerWidth < 760 ? 1 : 1.5)), t.setSize(x.current.clientWidth, x.current.clientHeight), t.shadowMap.enabled = !0, t.shadowMap.autoUpdate = false, t.shadowMap.needsUpdate = true, t.shadowMap.type = 1, t.toneMapping = 4, t.toneMappingExposure = 1.12, t.outputColorSpace = et, x.current.prepend(t.domElement), n = new Rl(l, t.domElement), n.target.set(0, 1, 0), n.enableDamping = !0, n.dampingFactor = .055, n.minDistance = 35, n.maxDistance = 520, n.maxPolarAngle = Math.PI / 2.25, n.minPolarAngle = .14, n.autoRotateSpeed = .3, n.panSpeed = .65, a.add(new wa(`#e5f6ec`, `#274b41`, 2.4));
         let d = new za(`#fff6d6`, 3.3);
         d.position.set(-75, 140, 65), d.castShadow = !0, d.shadow.mapSize.set(2048, 2048), d.shadow.camera.left = -150, d.shadow.camera.right = 150, d.shadow.camera.top = 150, d.shadow.camera.bottom = -150, d.shadow.camera.near = 1, d.shadow.camera.far = 450, d.shadow.normalBias = .12, d.shadow.bias = -8e-5, d.shadow.radius = 4, a.add(d);
         let f = new za(`#dfefff`, 1.1);
@@ -17451,68 +17452,59 @@ function iu({
         }
         let ae = new Vn();
         a.add(ae);
-        let oe = {
-          list: [],
-          signature: ``
-        };
-        function P(t = !1) {
-          if (e || !x.current || !S.current || C.current?.gestureActive) return;
-          let r = l.position.distanceTo(n.target),
-            i = r > 190 ? .16 : r > 120 ? .07 : r > 65 ? .025 : .003,
-            a = i + `:` + w.current.items.map(e => e.id).join(`,`);
-          if (!t && a === oe.signature) return;
-          oe.signature = a, ae.children.forEach(e => {
-            e.traverse(e => {
-              e.geometry?.dispose(), e.material && [].concat(e.material).forEach(e => e.dispose());
-            });
-          }), ae.clear(), S.current.replaceChildren(), oe.list = [];
-          let o = new Map();
-          for (let e of w.current.items) {
-            let t = `${Math.round(e.lng / i)}:${Math.round(e.lat / i)}`;
-            o.has(t) || o.set(t, []), o.get(t).push(e);
+        const badgeTextures=new Map();
+        function numberTexture(count){
+          if(badgeTextures.has(count))return badgeTextures.get(count);
+          const canvas=document.createElement('canvas');canvas.width=canvas.height=128;
+          drawClusterBadge(canvas.getContext('2d'),count);
+          const texture=new sn(canvas);texture.colorSpace=et;texture.needsUpdate=true;
+          badgeTextures.set(count,texture);return texture;
+        }
+        const oe={list:[],signature:'',step:null,items:null,selectedId:null};
+        function P(force=false){
+          if(e||!x.current||!S.current)return;
+          const current=C.current;
+          if(current&&(current.gestureActive||current.tween||performance.now()-current.lastInput<180)){
+            if(force)current.pendingMarkers=true;
+            return;
           }
-          for (let e of o.values()) {
-            let t = e.reduce((e, t) => e + t.lng, 0) / e.length,
-              n = e.reduce((e, t) => e + t.lat, 0) / e.length,
-              [r, i] = eu(t, n),
-              a = h(t, n),
-              o = new Vn();
-            o.position.set(r, a, i), o.userData.ngos = e;
-            let s = e.length > 1 ? 7.5 : 5,
-              c = new mi(new Bi(.16, .16, s, 6), new ea({
-                color: `#a9d8ba`,
-                roughness: .6
-              }));
-            c.position.y = s / 2, o.add(c);
-            let l = new mi(new Ui(e.length > 1 ? 1 : .7, 14, 12), new ea({
-              color: e.some(e => e.id === w.current.selected?.id) ? `#f2c576` : e.length > 1 || e[0].precision === `address` ? `#c8ead4` : `#829b90`,
-              roughness: .24,
-              metalness: .18,
-              emissive: `#49745b`,
-              emissiveIntensity: .25
-            }));
-            l.position.y = s, l.castShadow = !0, o.add(l);
-            let u = new mi(new Hi(.8, 1.25, 28), new ni({
-              color: `#f6efd4`,
-              transparent: !0,
-              opacity: .8,
-              side: 2
-            }));
-            u.rotation.x = -Math.PI / 2, u.position.y = .18, o.add(u), ae.add(o);
-            let d = document.createElement(`button`);
-            d.className = `atlas-pin-label` + (e.length > 1 ? ` cluster` : ``) + (e.some(e => e.id === w.current.selected?.id) ? ` selected` : ``), d.textContent = e.length > 1 ? String(e.length) : e[0].locationLabel, d.setAttribute(`aria-label`, e.length > 1 ? `${e.length} NGOs near ${e[0].locationLabel}` : `View ${e[0].name}`), d.onpointerenter = () => te(e.length === 1 ? e[0] : {
-              name: `${e.length} giving places`,
-              locationLabel: e[0].locationLabel
-            }), d.onpointerleave = () => te(null), d.onfocus = d.onpointerenter, d.onblur = d.onpointerleave, d.onclick = () => {
-              te(null), e.length === 1 ? w.current.onSelect(e[0]) : M(e);
-            }, S.current.append(d), oe.list.push({
-              el: d,
-              ngos: e,
-              ring: u,
-              active: e.some(e => e.id === w.current.selected?.id),
-              point: new K(r, a + s + 1, i)
-            });
+          force=force||!!current?.pendingMarkers;
+          const step=clusterStep(l.position.distanceTo(n.target),oe.step);
+          const selectedId=w.current.selected?.id;
+          if(!force&&step===oe.step&&oe.items===w.current.items&&selectedId===oe.selectedId)return;
+          if(current)current.pendingMarkers=false;
+          oe.step=step;oe.items=w.current.items;oe.selectedId=selectedId;
+          ae.children.forEach(group=>group.traverse(child=>{child.geometry?.dispose();if(child.material)[].concat(child.material).forEach(material=>material.dispose());}));
+          ae.clear();S.current.replaceChildren();oe.list=[];
+          const groups=new Map();
+          for(const ngo of w.current.items){const key=Math.round(ngo.lng/step)+':'+Math.round(ngo.lat/step);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(ngo);}
+          for(const items of groups.values()){
+            const lng=items.reduce((sum,ngo)=>sum+ngo.lng,0)/items.length;
+            const lat=items.reduce((sum,ngo)=>sum+ngo.lat,0)/items.length;
+            const [px,pz]=eu(lng,lat),height=h(lng,lat),group=new Vn(),stemHeight=items.length>1?7.5:5;
+            const active=items.some(ngo=>ngo.id===selectedId);
+            group.position.set(px,height,pz);group.userData.ngos=items;
+            const stem=new mi(new Bi(.16,.16,stemHeight,6),new ea({color:'#a9d8ba',roughness:.6}));
+            stem.position.y=stemHeight/2;group.add(stem);
+            let badge=null;
+            if(items.length>1){
+              badge=new mi(new Vi(1,1),new ni({map:numberTexture(items.length),transparent:true,depthWrite:false,side:2,toneMapped:false}));
+              badge.position.y=stemHeight;badge.renderOrder=2;group.add(badge);
+            }else{
+              const head=new mi(new Ui(.85,12,10),new ea({color:active?'#f2c576':items[0].precision==='address'?'#c8ead4':'#829b90',roughness:.24,metalness:.18,emissive:'#49745b',emissiveIntensity:.25}));
+              head.position.y=stemHeight;group.add(head);
+            }
+            const ring=new mi(new Hi(.8,1.25,24),new ni({color:'#f6efd4',transparent:true,opacity:.8,side:2}));
+            ring.rotation.x=-Math.PI/2;ring.position.y=.18;group.add(ring);ae.add(group);
+            // Accessible buttons are off the visual map; names appear on activation only.
+            const button=document.createElement('button');button.type='button';
+            button.className='atlas-accessible-pin';
+            button.textContent=items.length>1?items.length+' foundations in this area':items[0].name;
+            button.setAttribute('aria-label',items.length>1?'View '+items.length+' foundations in this area':'View '+items[0].name);
+            button.onclick=()=>{items.length===1?w.current.onSelect(items[0]):M(items);};S.current.append(button);
+            oe.list.push({ngos:items,ring,active,group,badge,badgePixels:innerWidth<760?36:30,point:new K(px,height+stemHeight,pz),viewPoint:new K()});
           }
+          t.shadowMap.needsUpdate=true;
         }
         let F = {
           camera: l,
@@ -17525,6 +17517,9 @@ function iu({
           updateMarkers: P,
           markerState: oe,
           tween: null,
+          lastInput: -Infinity,
+          viewportHeight: x.current.clientHeight,
+          badgeTextures,
           initialPosition: u
         };
         C.current = F, P();
@@ -17532,55 +17527,52 @@ function iu({
         function pickPin(event){
           const bounds=t.domElement.getBoundingClientRect();
           a.updateMatrixWorld(true);l.updateMatrixWorld(true);
+          const points=oe.list.map(marker=>{const p=marker.point.clone().project(l);return {x:bounds.left+(p.x*.5+.5)*bounds.width,y:bounds.top+(-p.y*.5+.5)*bounds.height,visible:p.z>-1&&p.z<1&&p.x>-1&&p.x<1&&p.y>-1&&p.y<1,items:marker.ngos};});
+          // Check the head first. The shaft and base remain secondary raycast targets.
+          const head=nearestProjectedPin(points,event.clientX,event.clientY,event.pointerType==='touch'?30:22);
+          if(head)return head;
           raycaster.setFromCamera(new G((event.clientX-bounds.left)/bounds.width*2-1,-(event.clientY-bounds.top)/bounds.height*2+1),l);
           for(const hit of raycaster.intersectObjects(ae.children,true)){
             let object=hit.object;while(object&&!object.userData.ngos)object=object.parent;
             if(object?.userData.ngos)return object.userData.ngos;
           }
-          const points=oe.list.map(marker=>{const p=marker.point.clone().project(l);return {x:bounds.left+(p.x*.5+.5)*bounds.width,y:bounds.top+(-p.y*.5+.5)*bounds.height,visible:p.z>-1&&p.z<1&&p.x>-1&&p.x<1&&p.y>-1&&p.y<1,items:marker.ngos};});
-          return nearestProjectedPin(points,event.clientX,event.clientY,event.pointerType==='touch'?30:20);
+          return null;
         }
-        F.disposePinInteraction=attachPinInteraction(t.domElement,{pick:pickPin,select:items=>{te(null);items.length===1?w.current.onSelect(items[0]):M(items);},setActive:active=>{F.gestureActive=active;if(active){F.tween=null;n.autoRotate=false;O(false);}}});
-        const freezeLabels=event=>{if(event.target.closest?.('.atlas-pin-label')){F.gestureActive=true;F.tween=null;n.autoRotate=false;O(false);}};
-        const releaseLabels=()=>{F.gestureActive=false;};
-        S.current.addEventListener('pointerdown',freezeLabels,true);
-        document.addEventListener('pointerup',releaseLabels,true);document.addEventListener('pointercancel',releaseLabels,true);
-        F.disposeLabelInteraction=()=>{S.current?.removeEventListener('pointerdown',freezeLabels,true);document.removeEventListener('pointerup',releaseLabels,true);document.removeEventListener('pointercancel',releaseLabels,true);};
+        F.disposePinInteraction=attachPinInteraction(t.domElement,{pick:pickPin,select:items=>{te(null);items.length===1?w.current.onSelect(items[0]):M(items);},setActive:active=>{F.gestureActive=active;F.lastInput=performance.now();if(active){F.tween=null;n.autoRotate=false;O(false);M(null);}}});
         let L = 0,
           ce = !0,
           le = new IntersectionObserver(e => {
             ce = e[0].isIntersecting;
           });
         le.observe(x.current), F.observer = le;
-        function ue(r) {
-          if (!e && x.current && (i = requestAnimationFrame(ue), !(r - L < 30 || document.hidden || !ce))) {
-            if (L = r, F.tween) {
-              let e = Math.min(1, (r - F.tween.time) / (matchMedia(`(prefers-reduced-motion: reduce)`).matches ? 1 : 1e3)),
-                t = 1 - (1 - e) ** 3;
-              l.position.lerpVectors(F.tween.from, F.tween.to, t), n.target.lerpVectors(F.tween.targetFrom, F.tween.targetTo, t), e === 1 && (F.tween = null);
-            }
-            n.update();
-            for (let e of oe.list) if (e.active) {
-              let t = matchMedia(`(prefers-reduced-motion: reduce)`).matches ? 1.6 : 1.5 + Math.sin(r * .002) * .35;
-              e.ring.scale.setScalar(t), e.ring.material.color.set(`#ffd89c`);
-            }
-            a.fog.near = l.position.distanceTo(n.target) + 120, a.fog.far = a.fog.near + 450, P();
-            if (!F.gestureActive) for (let e of oe.list) {
-              let t = e.point.clone().project(l);
-              e.el.style.left = `${(t.x * .5 + .5) * x.current.clientWidth}px`, e.el.style.top = `${(-t.y * .5 + .5) * x.current.clientHeight}px`, e.el.style.display = t.z < 1 && t.x > -1 && t.x < 1 && t.y > -1 && t.y < 1 ? `` : `none`;
-            }
-            t.render(a, l);
+        function ue(time){
+          if(e||!x.current)return;
+          i=requestAnimationFrame(ue);
+          if(document.hidden||!ce){L=0;return;}
+          const delta=L?Math.min((time-L)/1000,.05):1/60;L=time;
+          if(F.tween){
+            const progress=Math.min(1,(time-F.tween.time)/(matchMedia('(prefers-reduced-motion: reduce)').matches?1:700));
+            const eased=1-(1-progress)**3;
+            l.position.lerpVectors(F.tween.from,F.tween.to,eased);n.target.lerpVectors(F.tween.targetFrom,F.tween.targetTo,eased);
+            if(progress===1)F.tween=null;
           }
+          n.update(delta);l.updateMatrixWorld(true);
+          P();
+          // Cluster badges are real 3D objects, updated and drawn with their pins.
+          updateClusterBadges(oe.list,l,F.viewportHeight);
+          for(const marker of oe.list)if(marker.active){marker.ring.scale.setScalar(matchMedia('(prefers-reduced-motion: reduce)').matches?1.6:1.5+Math.sin(time*.002)*.35);marker.ring.material.color.set('#ffd89c');}
+          const distance=l.position.distanceTo(n.target);a.fog.near=distance+120;a.fog.far=distance+570;
+          t.render(a,l);
         }
         i = requestAnimationFrame(ue), r = new ResizeObserver(() => {
           if (e || !x.current) return;
           let r = x.current.clientWidth,
             i = x.current.clientHeight;
-          r && i && (l.aspect = r / i, l.updateProjectionMatrix(), t.setSize(r, i), F.initialPosition.set(0, 245, 145).multiplyScalar(Math.max(1, .74 / l.aspect)), w.current.selected || (F.tween = null, l.position.copy(F.initialPosition), n.target.set(0, 1, 0)));
+          r && i && (F.viewportHeight=i, l.aspect = r / i, l.updateProjectionMatrix(), t.setSize(r, i), F.initialPosition.set(0, 245, 145).multiplyScalar(Math.max(1, .74 / l.aspect)), w.current.selected || (F.tween = null, l.position.copy(F.initialPosition), n.target.set(0, 1, 0)));
         }), r.observe(x.current), t.domElement.addEventListener(`pointerdown`, () => {
-          F.tween = null, O(!1);
+          F.lastInput=performance.now(), F.tween = null, O(!1);
         }), t.domElement.addEventListener(`wheel`, () => {
-          F.tween = null, O(!1);
+          F.lastInput=performance.now(), F.tween = null, M(null), O(!1);
         }, {
           passive: !0
         }), t.domElement.addEventListener(`webglcontextlost`, t => {
@@ -17591,7 +17583,7 @@ function iu({
       }
     }
     return s(), () => {
-      e = !0, C.current?.disposePinInteraction?.(), C.current?.disposeLabelInteraction?.(), o.abort(), cancelAnimationFrame(i), r?.disconnect(), n?.dispose(), C.current?.observer?.disconnect(), a?.traverse(e => {
+      e = !0, C.current?.disposePinInteraction?.(), o.abort(), cancelAnimationFrame(i), r?.disconnect(), n?.dispose(), C.current?.observer?.disconnect(), C.current?.badgeTextures?.forEach(texture=>texture.dispose()), a?.traverse(e => {
         e.geometry?.dispose(), e.material && [].concat(e.material).forEach(e => e.dispose());
       }), t?.dispose(), t?.domElement?.remove(), C.current = null;
     };
@@ -17626,7 +17618,7 @@ function iu({
         intensity: 2.1
       }
     }[k];
-    e.sun.color.set(t.sun), e.sun.position.set(...t.position), e.sun.intensity = t.intensity, e.scene.background.set(t.sky), e.water.material.color.set(t.sea), e.scene.fog.color.copy(e.scene.background);
+    e.renderer.shadowMap.needsUpdate=true, e.sun.color.set(t.sun), e.sun.position.set(...t.position), e.sun.intensity = t.intensity, e.scene.background.set(t.sky), e.water.material.color.set(t.sea), e.scene.fog.color.copy(e.scene.background);
   }, [k, T]);
   function N(e, t) {
     let n = C.current;
@@ -17678,7 +17670,7 @@ function iu({
         className: `spin`
       }), `Shaping Lebanon’s mountains…`]
     }), (0, $.jsx)(`div`, {
-      className: `atlas-labels`,
+      className: `atlas-keyboard-pins`,
       ref: S
     }), (0, $.jsxs)(`div`, {
       className: `atlas-controls`,
@@ -17776,17 +17768,6 @@ function iu({
         children: [(0, $.jsx)(n, {
           size: 12
         }), ` Find a place near me`]
-      })]
-    }), ee && !r && (0, $.jsxs)(`div`, {
-      className: `atlas-hover`,
-      children: [(0, $.jsx)(e, {
-        size: 13
-      }), (0, $.jsxs)(`div`, {
-        children: [(0, $.jsx)(`strong`, {
-          children: ee.name
-        }), (0, $.jsx)(`small`, {
-          children: ee.locationLabel
-        })]
       })]
     }), (0, $.jsxs)(`div`, {
       className: `atlas-instructions`,

@@ -45,7 +45,7 @@ The directory notice and complete [Terms of Use and Disclaimer](https://lau-libr
 
 ## Current review scope
 
-The 3D map now retains the pin touched on pointer-down, keeps labels stable through a tap and distinguishes taps from drags and pinches. Phone styles provide larger targets, a full-width scrolling NGO detail panel and readable contact/notice text.
+The 3D map shows foundation information after a pin is selected. It has no floating name labels. Cluster counts are camera-facing 3D badges attached to the heads, and the heads are the primary click/touch targets. Selection retains the pin touched on pointer-down and distinguishes taps from drags and pinches. Phone styles provide larger targets, a full-width scrolling NGO detail panel and readable contact/notice text. The render loop runs at the display's animation rate, reuses static shadows and textures, and stabilizes clustering around zoom thresholds.
 
 The requested update removes NGO-specific illustrations, fridge indicators and filters, donation preparation/recording tools, and directory downloads. The app retains its current working name and displays “Last updated version 2026.”
 
