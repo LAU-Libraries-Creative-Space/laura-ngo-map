@@ -14,11 +14,11 @@
 
 An interactive map that helps individuals, caterers, wedding planners and event organizers find NGOs across Lebanon that may receive surplus food. The directory brings together the list compiled by the Department of Nutrition and Food Science at the Lebanese American University.
 
-This is the supplied **v1.2 review version**, prepared for Dr. Rana Rizk and the NFS team. The app’s final name and wording remain open for review.
+This is the supplied **v1.4 review version**, prepared for Dr. Rana Rizk and the NFS team. The app’s final name and wording remain open for review.
 
 ## Explore the map
 
-- Browse **63 NGOs** in a 3D terrain atlas or a detailed street map.
+- Browse **59 active NGOs** in a 3D terrain atlas or a detailed street map.
 - Search by organization or area, and filter the directory.
 - View NGO details, available contact information, directions and published reception-hour information.
 - Save organizations in the current browser and share links to individual NGO entries.
@@ -35,11 +35,17 @@ The review website opens directly in a browser. No download or GitHub account is
 | NGO information | Confirm exact locations, contact details and reception information. |
 | User experience | Suggest changes to the layout, filters and map interactions. |
 
-Of the 63 entries, **6 use researched address-level pins** and **57 still require exact-location confirmation**. Approximate pins indicate a general area; they should not be treated as a confirmed handover address. Location research remains dated 21 October 2026. The separate location-review spreadsheet is not published in this app.
+The directory was revised on **19 November 2026** using the supplied NFS location updates. It contains **59 active NGOs**, **47 supplied or researched address pins** and **12 approximate pins**. Three entries marked for removal and one reported as non-operational were excluded. Some supplied pins differ from their original source area or identify more than one branch; these discrepancies are noted in the NGO details. Donors must call the NGO to confirm the exact receiving premises.
 
 Contact the receiving NGO to confirm its location, current capacity, accepted food and delivery arrangements.
 
+## Terms and responsibilities
+
+The directory notice and complete [Terms of Use and Disclaimer](https://lau-libraries-creative-space.github.io/laura-ngo-map/terms.html) use the supplied wording. LAU is an information provider only; listed NGOs are independent. The source document recommends LAU legal-office review of the final wording.
+
 ## Current review scope
+
+The 3D map now retains the pin touched on pointer-down, keeps labels stable through a tap and distinguishes taps from drags and pinches. Phone styles provide larger targets, a full-width scrolling NGO detail panel and readable contact/notice text.
 
 The requested update removes NGO-specific illustrations, fridge indicators and filters, donation preparation/recording tools, and directory downloads. The app retains its current working name and displays “Last updated version 2026.”
 

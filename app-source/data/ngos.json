@@ -48,14 +48,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.8862481,
-    "lng": 35.4969535,
-    "locationLabel": "Mousaitbeh, Beirut",
-    "precision": "area",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/291393757",
+    "lat": 33.566315,
+    "lng": 35.388927,
+    "locationLabel": "Two supplied locations · confirm receiving branch",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.5663150,35.3889270",
     "sourceUrl": "https://lebanesefoodbank.org/assets/attachments/List-of-NGOs-2021.pdf",
-    "sourceNote": "Source neighborhood retained. Web search found a separate historical main-office address on Corniche Al Mazraa, which does not establish this donation branch. Pin is the Mousaitbeh neighborhood only.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements. Two locations were supplied; the first is shown on the map. Both map links are listed below. The supplied pin differs from the original source area (Mousaitbeh, Beirut, Beirut); confirm the correct branch before travelling.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -68,7 +68,20 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.566315,
+        "lng": 35.388927,
+        "url": "https://www.google.com/maps?q=33.5663150,35.3889270"
+      },
+      {
+        "lat": 33.561752,
+        "lng": 35.368084,
+        "url": "https://www.google.com/maps?q=33.5617520,35.3680840"
+      }
+    ]
   },
   {
     "id": 5,
@@ -88,7 +101,7 @@
     "precision": "area",
     "coordinateSourceUrl": "https://www.openstreetmap.org/relation/7121561",
     "sourceUrl": "https://alinaya.org/contact-us/",
-    "sourceNote": "Official contact page lists Tallet El Khayat Park, Hassana Fathallah Daouk Street and phone 01 788 770 matching the sheet. Pin is the Tallet El Khayat neighborhood, not an exact building; sheet says nearby Verdun.",
+    "sourceNote": "NFS location update, 19 November 2026: exact premises remain unconfirmed. The displayed pin is an approximate area; contact the NGO before delivery. Updated address: Hassana Fathallah Daouk Street, Tallet Al-Khayat Garden, Beirut. The Bing URL contains a view center rather than a confirmed pin.",
     "researched": true,
     "researchDate": "2026-10-21",
     "donationHours": {
@@ -104,7 +117,9 @@
       "checkedAt": "2026-10-29",
       "sourceUrl": "https://alinaya.org/contact-us/",
       "note": "Contact page contains unrelated content; do not treat it as a reliable hours source. Confirm directly."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "updatedAddress": "Hassana Fathallah Daouk Street, Tallet Al-Khayat Garden, Beirut"
   },
   {
     "id": 6,
@@ -152,14 +167,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.8732567,
-    "lng": 35.5056692,
-    "locationLabel": "Tariq El Jdideh, Beirut",
-    "precision": "area",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/4807494934",
+    "lat": 33.8745,
+    "lng": 35.503605,
+    "locationLabel": "Supplied pin · Tariq El Jdideh, Beirut",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8745000,35.5036050",
     "sourceUrl": "https://www.openstreetmap.org/node/4807494934",
-    "sourceNote": "Web search did not establish a reliable exact NGO office. Uses the locality stated in the NFS spreadsheet. The coordinate is a general place pin, not a donation entrance.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -172,7 +187,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8745,
+        "lng": 35.503605,
+        "url": "https://www.google.com/maps?q=33.8745000,35.5036050"
+      }
+    ]
   },
   {
     "id": 15,
@@ -186,14 +209,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.8732567,
-    "lng": 35.5056692,
-    "locationLabel": "Tariq El Jdideh, Beirut",
-    "precision": "area",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/4807494934",
+    "lat": 33.8756633,
+    "lng": 35.5002252,
+    "locationLabel": "Supplied pin · Tariq El Jdideh, Beirut",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8756633,35.5002252",
     "sourceUrl": "https://lebaneselegislation.com/ar/law/210757/",
-    "sourceNote": "Founding legal notice lists Abu Shaker Square, opposite municipal stadium, Al Zaim building. This historical address is not assumed current. Pin remains the source Tariq El Jdideh neighborhood.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -206,7 +229,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8756633,
+        "lng": 35.5002252,
+        "url": "https://www.google.com/maps?q=33.8756633,35.5002252"
+      }
+    ]
   },
   {
     "id": 17,
@@ -220,14 +251,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.8959203,
-    "lng": 35.47843,
-    "locationLabel": "Beirut",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/289346590",
+    "lat": 33.8940783,
+    "lng": 35.4947685,
+    "locationLabel": "Supplied pin · Beirut",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8940783,35.4947685",
     "sourceUrl": "https://www.openstreetmap.org/node/289346590",
-    "sourceNote": "Web search did not establish a reliable exact NGO office. Uses the locality stated in the NFS spreadsheet. The coordinate is a general place pin, not a donation entrance.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -240,7 +271,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8940783,
+        "lng": 35.4947685,
+        "url": "https://www.google.com/maps?q=33.8940783,35.4947685"
+      }
+    ]
   },
   {
     "id": 18,
@@ -254,14 +293,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.8959203,
-    "lng": 35.47843,
-    "locationLabel": "Beirut",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/289346590",
+    "lat": 33.8368625,
+    "lng": 35.5448906,
+    "locationLabel": "Supplied pin · Beirut",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8368625,35.5448906",
     "sourceUrl": "https://www.openstreetmap.org/node/289346590",
-    "sourceNote": "Web search did not establish a reliable exact NGO office. Uses the locality stated in the NFS spreadsheet. The coordinate is a general place pin, not a donation entrance.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -274,7 +313,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8368625,
+        "lng": 35.5448906,
+        "url": "https://www.google.com/maps?q=33.8368625,35.5448906"
+      }
+    ]
   },
   {
     "id": 21,
@@ -288,14 +335,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.8882867,
-    "lng": 35.4899022,
-    "locationLabel": "Zaidaniyeh, Beirut",
-    "precision": "area",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/way/1018469589",
+    "lat": 33.8882625,
+    "lng": 35.4934219,
+    "locationLabel": "Supplied pin · Zaidaniyeh, Beirut",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8882625,35.4934219",
     "sourceUrl": "https://www.openstreetmap.org/way/1018469589",
-    "sourceNote": "Web search did not establish a reliable exact NGO office. Uses the locality stated in the NFS spreadsheet. The coordinate is a general place pin, not a donation entrance.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -308,7 +355,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8882625,
+        "lng": 35.4934219,
+        "url": "https://www.google.com/maps?q=33.8882625,35.4934219"
+      }
+    ]
   },
   {
     "id": 22,
@@ -328,7 +383,7 @@
     "precision": "area",
     "coordinateSourceUrl": "https://www.openstreetmap.org/relation/3074299",
     "sourceUrl": "https://www.openstreetmap.org/relation/3074299",
-    "sourceNote": "Web search did not establish a reliable exact NGO office. Uses the locality stated in the NFS spreadsheet. The coordinate is a general place pin, not a donation entrance.",
+    "sourceNote": "NFS location update, 19 November 2026: exact premises remain unconfirmed. The displayed pin is an approximate area; contact the NGO before delivery.",
     "researched": true,
     "researchDate": "2026-10-21",
     "donationHours": {
@@ -342,7 +397,8 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19"
   },
   {
     "id": 23,
@@ -356,14 +412,14 @@
     "status": "Accept Food Donations",
     "notes": "Caroline Hanna (founder)",
     "pantryOnly": false,
-    "lat": 33.8904237,
-    "lng": 35.5255238,
-    "locationLabel": "Achrafieh, Beirut",
-    "precision": "area",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/4807433987",
+    "lat": 33.8886986,
+    "lng": 35.5293083,
+    "locationLabel": "Supplied pin · Achrafieh, Beirut",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8886986,35.5293083",
     "sourceUrl": "https://www.openstreetmap.org/node/4807433987",
-    "sourceNote": "Web search did not establish a reliable exact NGO office. Uses the locality stated in the NFS spreadsheet. The coordinate is a general place pin, not a donation entrance.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -376,7 +432,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8886986,
+        "lng": 35.5293083,
+        "url": "https://www.google.com/maps?q=33.8886986,35.5293083"
+      }
+    ]
   },
   {
     "id": 26,
@@ -390,14 +454,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.880408,
-    "lng": 35.546644,
-    "locationLabel": "Dekwaneh",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/relation/7371104",
+    "lat": 33.8825786,
+    "lng": 35.5431703,
+    "locationLabel": "Mirna Chalouhi Highway, Sin El Fil",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8825786,35.5431703",
     "sourceUrl": "https://loubnaniyoun.org/",
-    "sourceNote": "Official website confirms Dikweneh Main Street, Technomania Building, 3rd floor and the sheet phones. Pin is the Dekwaneh town center; exact office coordinates were not independently located.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -410,7 +474,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8825786,
+        "lng": 35.5431703,
+        "url": "https://www.google.com/maps?q=33.8825786,35.5431703"
+      }
+    ]
   },
   {
     "id": 27,
@@ -430,7 +502,7 @@
     "precision": "area",
     "coordinateSourceUrl": "https://www.openstreetmap.org/relation/7120346",
     "sourceUrl": "https://ahlafawda.org/contact-us/",
-    "sourceNote": "Official current office is Youssef Assaf Building, 180 Hamra Street, Ras Beirut, which differs from the source Achrafieh entry. Pin uses the Hamra neighborhood, not a verified building entrance.",
+    "sourceNote": "NFS location update, 19 November 2026: exact premises remain unconfirmed. The displayed pin is an approximate area; contact the NGO before delivery. Updated address: Hamra cairo street youssef Assaf building 180 same as rossa cafe 3rd floor. The map URL contains a search-view center, not a confirmed destination pin.",
     "researched": true,
     "researchDate": "2026-10-21",
     "donationHours": {
@@ -446,7 +518,9 @@
       "checkedAt": "2026-10-29",
       "sourceUrl": "https://ahlafawda.org/contact-us/",
       "note": "No confirmed donation reception schedule obtained. Contact the receiving branch."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "updatedAddress": "Hamra cairo street youssef Assaf building 180 same as rossa cafe 3rd floor"
   },
   {
     "id": 31,
@@ -460,14 +534,14 @@
     "status": "Accept Food Donations",
     "notes": "Soeur Sayde Charbel 71 869807 / Melik Maroun 03 545 855",
     "pantryOnly": false,
-    "lat": 33.8719938,
-    "lng": 35.5222897,
-    "locationLabel": "Furn El Chebbak",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/5421906316",
+    "lat": 33.866032,
+    "lng": 35.52615,
+    "locationLabel": "Supplied pin · Furn El Chebbak",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8660320,35.5261500",
     "sourceUrl": "https://maronites.church/sites/maronite-care-home-furn-el-chebbak/",
-    "sourceNote": "Church directory gives Wadih Naeem Street, Furn El Chebbak, and 01 280696 matching the source. Exact entrance not located; pin is town center.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -480,7 +554,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.866032,
+        "lng": 35.52615,
+        "url": "https://www.google.com/maps?q=33.8660320,35.5261500"
+      }
+    ]
   },
   {
     "id": 33,
@@ -494,14 +576,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 34.2209392,
-    "lng": 35.8374923,
-    "locationLabel": "Beit Chlala, Batroun",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/7804690976",
+    "lat": 33.8870256,
+    "lng": 35.545674,
+    "locationLabel": "Supplied pin · Bourj Hammoud (confirm branch)",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8870256,35.5456740",
     "sourceUrl": "https://www.openstreetmap.org/node/7804690976",
-    "sourceNote": "Web search did not establish a reliable exact NGO office. Uses the locality stated in the NFS spreadsheet. The coordinate is a general place pin, not a donation entrance.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements. The supplied pin differs from the original source area (Beit Chlala, Batroun, North); confirm the correct branch before travelling.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -514,7 +596,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8870256,
+        "lng": 35.545674,
+        "url": "https://www.google.com/maps?q=33.8870256,35.5456740"
+      }
+    ]
   },
   {
     "id": 34,
@@ -528,14 +618,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 34.2507231,
-    "lng": 36.0099915,
-    "locationLabel": "Bcharre",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/2337736413",
+    "lat": 34.2487144,
+    "lng": 36.0112801,
+    "locationLabel": "Supplied pin · Bcharre",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=34.2487144,36.0112801",
     "sourceUrl": "https://stvincentlb.org/north-ssvp-conferences/",
-    "sourceNote": "Sheet phone 03 882 415 exactly matches official Our Lady of Becharre branch, meeting at Lady of Becharre Church. Sheet address says Hadchit, whose official branch has a different phone. Bcharre town pin is used; call to confirm branch and delivery point.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -548,7 +638,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 34.2487144,
+        "lng": 36.0112801,
+        "url": "https://www.google.com/maps?q=34.2487144,36.0112801"
+      }
+    ]
   },
   {
     "id": 43,
@@ -562,14 +660,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 34.4373616,
-    "lng": 35.8348551,
-    "locationLabel": "Tripoli (Al Maarad area)",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/relation/4869639",
+    "lat": 34.4422379,
+    "lng": 35.8335967,
+    "locationLabel": "Supplied pin · Tripoli (Al Maarad area)",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=34.4422379,35.8335967",
     "sourceUrl": "https://www.openstreetmap.org/relation/4869639",
-    "sourceNote": "Web search did not establish a reliable exact NGO office. Uses the locality stated in the NFS spreadsheet. The coordinate is a general place pin, not a donation entrance.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -582,7 +680,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 34.4422379,
+        "lng": 35.8335967,
+        "url": "https://www.google.com/maps?q=34.4422379,35.8335967"
+      }
+    ]
   },
   {
     "id": 48,
@@ -596,14 +702,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 34.4227597,
-    "lng": 35.8436619,
-    "locationLabel": "Abou Samra, Tripoli",
-    "precision": "area",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/9393005674",
+    "lat": 34.4273811,
+    "lng": 35.8393179,
+    "locationLabel": "Supplied pin · Abou Samra, Tripoli",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=34.4273811,35.8393179",
     "sourceUrl": "https://www.moph.gov.lb/fr/HealthFacilities/view/0/53451/84635/social-services-association-dar-al-ajaza-hospice?facility_type=8",
-    "sourceNote": "Ministry of Public Health and official ssmclebanon.org place this institution in Abou Samra, Tripoli. Pin is neighborhood only; exact facility entrance not located.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -616,7 +722,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 34.4273811,
+        "lng": 35.8393179,
+        "url": "https://www.google.com/maps?q=34.4273811,35.8393179"
+      }
+    ]
   },
   {
     "id": 50,
@@ -630,14 +744,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 34.545022,
-    "lng": 36.077948,
-    "locationLabel": "Halba, Akkar",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/4519119272",
+    "lat": 34.5493333,
+    "lng": 36.0765278,
+    "locationLabel": "Supplied pin · Halba, Akkar",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=34.5493333,36.0765278",
     "sourceUrl": "https://staging.daleel-madani.org/ar/civil-society-directory/jmyt-kn-sdyqy-ajtmayt-trbwyt-anmayyt-be-my-friend-association-social-educational-and-developmental/events/mhadrat-alnf-alqaym-ly-alnw-alajtmay-walzwaj-almbkr-gbv",
-    "sourceNote": "NGO event posting gives Halba main road, Abdo Halabi building, and phone 70492791 matching the sheet. Pin is Halba town, not a verified building.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -650,7 +764,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 34.5493333,
+        "lng": 36.0765278,
+        "url": "https://www.google.com/maps?q=34.5493333,36.0765278"
+      }
+    ]
   },
   {
     "id": 55,
@@ -664,14 +786,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 34.4980863,
-    "lng": 35.9956699,
-    "locationLabel": "Bebnine, Akkar",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/6128210028",
+    "lat": 34.4891489,
+    "lng": 35.9857775,
+    "locationLabel": "Supplied pin · Bebnine, Akkar",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=34.4891489,35.9857775",
     "sourceUrl": "https://lifewebsite.lifelebanon.com/uploads/LIFE%20Emergency%20Relief%20Fund%20-%20Final%20Report.pdf",
-    "sourceNote": "LIFE partner report identifies this society and food assistance in Akkar. No reliable exact office found; uses Bebnine from the source spreadsheet.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -684,7 +806,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 34.4891489,
+        "lng": 35.9857775,
+        "url": "https://www.google.com/maps?q=34.4891489,35.9857775"
+      }
+    ]
   },
   {
     "id": 58,
@@ -698,14 +828,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 34.483644,
-    "lng": 35.9995303,
-    "locationLabel": "Beit El Haouch, Akkar",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/7356608408",
+    "lat": 34.4713539,
+    "lng": 35.9946824,
+    "locationLabel": "Supplied pin · Beit El Haouch, Akkar",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=34.4713539,35.9946824",
     "sourceUrl": "https://www.pcm.gov.lb/arabic/subpg.aspx?pageid=27450",
-    "sourceNote": "Official government notice places the Akkar Care and Development complex in Beit El Haouch. Pin is the town center, not a verified campus entrance.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -718,7 +848,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 34.4713539,
+        "lng": 35.9946824,
+        "url": "https://www.google.com/maps?q=34.4713539,35.9946824"
+      }
+    ]
   },
   {
     "id": 59,
@@ -732,14 +870,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 34.5870739,
-    "lng": 36.3057649,
-    "locationLabel": "Andaket, Akkar",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/5813273783",
+    "lat": 34.5841286,
+    "lng": 36.3033326,
+    "locationLabel": "Supplied pin · Andaket, Akkar",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=34.5841286,36.3033326",
     "sourceUrl": "https://www.linkedin.com/posts/tadbeerngo_tadbeerngo-tadbeer-andaket-activity-7184526047680339969-cFbK",
-    "sourceNote": "Tadbeer NGO own posting identifies Andaket, Akkar. No exact office coordinates found; town pin only.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -752,7 +890,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 34.5841286,
+        "lng": 36.3033326,
+        "url": "https://www.google.com/maps?q=34.5841286,36.3033326"
+      }
+    ]
   },
   {
     "id": 63,
@@ -766,14 +912,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.4389263,
-    "lng": 35.5632591,
-    "locationLabel": "Reihan, Jezzine",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/5273978140",
+    "lat": 33.4450302,
+    "lng": 35.5683098,
+    "locationLabel": "Supplied pin · Reihan, Jezzine",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.4450302,35.5683098",
     "sourceUrl": "https://www.nna-leb.gov.lb/ar/news/391861/جلسات-توعية-لجمعية-الإعتناء-بالأم-والطفل-aime-liba",
-    "sourceNote": "National News Agency identifies the association center in Reihan; corroborating coverage specifies Reihan, Jezzine. Source district says Saida; retained in original fields. Pin is Reihan town, not an exact office.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -786,7 +932,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.4450302,
+        "lng": 35.5683098,
+        "url": "https://www.google.com/maps?q=33.4450302,35.5683098"
+      }
+    ]
   },
   {
     "id": 64,
@@ -800,14 +954,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.3812029,
-    "lng": 35.4825346,
-    "locationLabel": "Nabatieh district (Zahrani address unresolved)",
-    "precision": "region",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/1102281755",
+    "lat": 33.4734484,
+    "lng": 35.5092375,
+    "locationLabel": "Supplied pin · Nabatieh district (Zahrani address unresolved)",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.4734484,35.5092375",
     "sourceUrl": "https://lebanesefoodbank.org/assets/attachments/List-of-NGOs-2021.pdf",
-    "sourceNote": "The source gives Zahrani under Nabatieh, with no identifiable street or town. Search results for a same-name Palestinian palliative care organization were rejected. Uses Nabatieh city as a clearly approximate district fallback; confirm location by phone.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -820,41 +974,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
-  },
-  {
-    "id": 66,
-    "row": 32,
-    "region": "Nabatieh",
-    "district": "Al Nabatieh",
-    "nameAr": "جمعية تقدم المرأة في الجنوب",
-    "addressAr": "كفرجوز",
-    "name": "Women's Advancement Association",
-    "contact": "03 986770",
-    "status": "Accept Food Donations",
-    "notes": "",
-    "pantryOnly": false,
-    "lat": 33.3949787,
-    "lng": 35.4756045,
-    "locationLabel": "Kfar Joz, Nabatieh",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/12173760765",
-    "sourceUrl": "https://takadomalmaraa.com/?p=118",
-    "sourceNote": "NGO own website confirms its building is in Kfar Joz, Nabatieh. Pin is village center because exact building coordinates were not found.",
-    "researched": true,
-    "researchDate": "2026-10-21",
-    "donationHours": {
-      "kind": "donation",
-      "verified": false,
-      "weekly": {},
-      "exceptions": {},
-      "sourceUrl": null,
-      "verifiedAt": null
     },
-    "hoursResearch": {
-      "status": "not_reviewed",
-      "note": "Donation reception hours require direct confirmation."
-    }
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.4734484,
+        "lng": 35.5092375,
+        "url": "https://www.google.com/maps?q=33.4734484,35.5092375"
+      }
+    ]
   },
   {
     "id": 68,
@@ -868,14 +996,14 @@
     "status": "Accept Food Donations",
     "notes": "Tareq el bizri 76747160 (owner)",
     "pantryOnly": false,
-    "lat": 33.3431727,
-    "lng": 35.677966,
-    "locationLabel": "Kfarhamam, Hasbaya",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/6563281903",
+    "lat": 33.561314,
+    "lng": 35.3793061,
+    "locationLabel": "Supplied pin · Kfarhamam, Hasbaya",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.5613140,35.3793061",
     "sourceUrl": "https://lebanesefoodbank.org/assets/attachments/List-of-NGOs-2021.pdf",
-    "sourceNote": "Lebanese Food Bank list identifies the NGO serving Kfarhamam and neighboring Arqoub villages. Uses the source Kfarhamam village only; exact office not located.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -888,7 +1016,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.561314,
+        "lng": 35.3793061,
+        "url": "https://www.google.com/maps?q=33.5613140,35.3793061"
+      }
+    ]
   },
   {
     "id": 69,
@@ -896,7 +1032,7 @@
     "region": "Nabatieh",
     "district": "Hasbaya",
     "nameAr": "أجيال الهبارية",
-    "addressAr": "الهبارية",
+    "addressAr": "الهبارية - جنوب لبنان - مبنى يوسف نور الدين الاجتماعي الثقافي- الطابق الاول",
     "name": "Ajyal Al Hebbarieh",
     "contact": "03 505 004",
     "status": "Accept Food Donations",
@@ -908,7 +1044,7 @@
     "precision": "town",
     "coordinateSourceUrl": "https://www.openstreetmap.org/node/5521352568",
     "sourceUrl": "https://www.openstreetmap.org/node/5521352568",
-    "sourceNote": "Web search did not establish a reliable exact NGO office. Uses the locality stated in the NFS spreadsheet. The coordinate is a general place pin, not a donation entrance.",
+    "sourceNote": "NFS location update, 19 November 2026: exact premises remain unconfirmed. The displayed pin is an approximate area; contact the NGO before delivery.",
     "researched": true,
     "researchDate": "2026-10-21",
     "donationHours": {
@@ -922,7 +1058,9 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "updatedAddress": "الهبارية - جنوب لبنان - مبنى يوسف نور الدين الاجتماعي الثقافي- الطابق الاول"
   },
   {
     "id": 71,
@@ -936,13 +1074,13 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.3444753,
-    "lng": 35.7494258,
-    "locationLabel": "Shebaa, Hasbaya",
+    "lat": 33.3490302,
+    "lng": 35.749612,
+    "locationLabel": "Chebaa · exact premises unconfirmed",
     "precision": "town",
     "coordinateSourceUrl": "https://www.openstreetmap.org/node/5519291336",
     "sourceUrl": "https://www.openstreetmap.org/node/5519291336",
-    "sourceNote": "Web search did not establish a reliable exact NGO office. Uses the locality stated in the NFS spreadsheet. The coordinate is a general place pin, not a donation entrance.",
+    "sourceNote": "NFS location update, 19 November 2026: exact premises remain unconfirmed. The displayed pin is an approximate area; contact the NGO before delivery. The supplied map link identifies Chebaa town rather than the NGO premises.",
     "researched": true,
     "researchDate": "2026-10-21",
     "donationHours": {
@@ -956,41 +1094,8 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
-  },
-  {
-    "id": 72,
-    "row": 36,
-    "region": "Nabatieh",
-    "district": "Hasbaya",
-    "nameAr": "تجمع شبيبة عين قنيا",
-    "addressAr": "عين قنيا",
-    "name": "Ayn Kenia Youth Association",
-    "contact": "71 473 598",
-    "status": "Accept Food Donations",
-    "notes": "",
-    "pantryOnly": false,
-    "lat": 33.4014021,
-    "lng": 35.7058968,
-    "locationLabel": "Ain Qinia, Hasbaya",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/5866296361",
-    "sourceUrl": "https://shabiba-aya.blogspot.com/p/blog-page.html",
-    "sourceNote": "Association own blog identifies Ain Qinia in Hasbaya as its home village. Pin is village center only.",
-    "researched": true,
-    "researchDate": "2026-10-21",
-    "donationHours": {
-      "kind": "donation",
-      "verified": false,
-      "weekly": {},
-      "exceptions": {},
-      "sourceUrl": null,
-      "verifiedAt": null
     },
-    "hoursResearch": {
-      "status": "not_reviewed",
-      "note": "Donation reception hours require direct confirmation."
-    }
+    "locationUpdatedAt": "2026-11-19"
   },
   {
     "id": 73,
@@ -1004,14 +1109,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.233582,
-    "lng": 35.4379313,
-    "locationLabel": "Sawwaneh, Marjayoun",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/6816154276",
+    "lat": 33.2338614,
+    "lng": 35.43743,
+    "locationLabel": "Supplied pin · Sawwaneh, Marjayoun",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.2338614,35.4374300",
     "sourceUrl": "https://mwklb.org/",
-    "sourceNote": "Partner NGO describes signing a cooperation protocol at Better Society Association headquarters in Sawwaneh, Marjayoun. Pin is village center only.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1024,7 +1129,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.2338614,
+        "lng": 35.43743,
+        "url": "https://www.google.com/maps?q=33.2338614,35.4374300"
+      }
+    ]
   },
   {
     "id": 74,
@@ -1038,14 +1151,14 @@
     "status": "Accept Food Donations",
     "notes": "معلبات ، مونة only",
     "pantryOnly": true,
-    "lat": 33.3592529,
-    "lng": 35.5902134,
-    "locationLabel": "Marjayoun district (Jabal Amel regional pin)",
-    "precision": "region",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/relation/9933772",
+    "lat": 33.8748207,
+    "lng": 35.4823112,
+    "locationLabel": "Supplied pin · Beirut (confirm branch)",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8748207,35.4823112",
     "sourceUrl": "https://lebanesefoodbank.org/assets/attachments/List-of-NGOs-2021.pdf",
-    "sourceNote": "Source says Jabal Amel and district Marjayoun, a broad regional description. No reliable exact donation office found. Pin represents Marjayoun district and must not be used as a street destination.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements. The supplied pin differs from the original source area (Marjayoun district (Jabal Amel regional pin), Nabatieh); confirm the correct branch before travelling.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1058,7 +1171,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8748207,
+        "lng": 35.4823112,
+        "url": "https://www.google.com/maps?q=33.8748207,35.4823112"
+      }
+    ]
   },
   {
     "id": 75,
@@ -1072,14 +1193,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 34.009653,
-    "lng": 36.2117096,
-    "locationLabel": "Baalbek",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/relation/3095790",
+    "lat": 34.0117511,
+    "lng": 36.2054095,
+    "locationLabel": "Near Sindibad Restaurant, Baalbek",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=34.0117511,36.2054095",
     "sourceUrl": "https://lacode.org/about-lacode/",
-    "sourceNote": "Official LACODE page lists Baalbek eastern entrance behind Sinbad Restaurant. Pin is Baalbek town; exact office coordinates not independently identified.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1092,7 +1213,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 34.0117511,
+        "lng": 36.2054095,
+        "url": "https://www.google.com/maps?q=34.0117511,36.2054095"
+      }
+    ]
   },
   {
     "id": 76,
@@ -1106,14 +1235,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 34.009653,
-    "lng": 36.2117096,
-    "locationLabel": "Baalbek / Hermel (Baalbek city pin)",
-    "precision": "region",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/relation/3095790",
+    "lat": 33.9976985,
+    "lng": 36.2007498,
+    "locationLabel": "Supplied pin · Baalbek / Hermel (Baalbek city pin)",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.9976985,36.2007498",
     "sourceUrl": "https://lebanesefoodbank.org/assets/attachments/List-of-NGOs-2021.pdf",
-    "sourceNote": "Source lists Baalbek / Hermel without a distinct office. A Baalbek city fallback is used for this regional entry; exact location needs phone confirmation.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1126,7 +1255,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.9976985,
+        "lng": 36.2007498,
+        "url": "https://www.google.com/maps?q=33.9976985,36.2007498"
+      }
+    ]
   },
   {
     "id": 77,
@@ -1134,7 +1271,7 @@
     "region": "Baalbek-Hermel",
     "district": "Baalback",
     "nameAr": "Leaders Of Tomorrow",
-    "addressAr": "الفاكهة / جديدة الفاكهة",
+    "addressAr": "البقاع الشمالي، الفاكهة، الزيتون، الطريق الداخلي، حي الجامع.",
     "name": "Leaders of Tomorrow",
     "contact": "70 218 220",
     "status": "Accept Food Donations",
@@ -1146,7 +1283,7 @@
     "precision": "town",
     "coordinateSourceUrl": "https://www.openstreetmap.org/node/5018267887",
     "sourceUrl": "https://lebanesefoodbank.org/assets/attachments/List-of-NGOs-2021.pdf",
-    "sourceNote": "Source identifies Fakiha / Jdeidet El Fakiha. No reliable exact NGO office found; pin is Fakiha village.",
+    "sourceNote": "NFS location update, 19 November 2026: exact premises remain unconfirmed. The displayed pin is an approximate area; contact the NGO before delivery.",
     "researched": true,
     "researchDate": "2026-10-21",
     "donationHours": {
@@ -1160,7 +1297,9 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "updatedAddress": "البقاع الشمالي، الفاكهة، الزيتون، الطريق الداخلي، حي الجامع."
   },
   {
     "id": 80,
@@ -1174,14 +1313,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.8477069,
-    "lng": 35.9024955,
-    "locationLabel": "Zahle",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/564377442",
+    "lat": 33.887024,
+    "lng": 35.545677,
+    "locationLabel": "Supplied pin · Bourj Hammoud (confirm branch)",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8870240,35.5456770",
     "sourceUrl": "https://stvincentlb.org/bekaa-ssvp-conferences/",
-    "sourceNote": "Official SSVP network has Bekaa conferences. Exact source branch not confirmed from national contact; uses Zahle town from spreadsheet.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements. The supplied pin differs from the original source area (Zahle, Bekaa); confirm the correct branch before travelling.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1194,7 +1333,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.887024,
+        "lng": 35.545677,
+        "url": "https://www.google.com/maps?q=33.8870240,35.5456770"
+      }
+    ]
   },
   {
     "id": 81,
@@ -1208,14 +1355,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.8172909,
-    "lng": 35.8676904,
-    "locationLabel": "Taalabaya, Zahle",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/6329606679",
+    "lat": 33.8144,
+    "lng": 35.859341,
+    "locationLabel": "Supplied pin · Taalabaya, Zahle",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8144000,35.8593410",
     "sourceUrl": "https://www.openstreetmap.org/node/6329606679",
-    "sourceNote": "Web search did not establish a reliable exact NGO office. Uses the locality stated in the NFS spreadsheet. The coordinate is a general place pin, not a donation entrance.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1228,7 +1375,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8144,
+        "lng": 35.859341,
+        "url": "https://www.google.com/maps?q=33.8144000,35.8593410"
+      }
+    ]
   },
   {
     "id": 83,
@@ -1248,7 +1403,7 @@
     "precision": "town",
     "coordinateSourceUrl": "https://www.openstreetmap.org/relation/12043660",
     "sourceUrl": "https://www.openstreetmap.org/relation/12043660",
-    "sourceNote": "Web search did not establish a reliable exact NGO office. Uses the locality stated in the NFS spreadsheet. The coordinate is a general place pin, not a donation entrance.",
+    "sourceNote": "NFS location update, 19 November 2026: exact premises remain unconfirmed. The displayed pin is an approximate area; contact the NGO before delivery.",
     "researched": true,
     "researchDate": "2026-10-21",
     "donationHours": {
@@ -1262,7 +1417,8 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19"
   },
   {
     "id": 84,
@@ -1276,14 +1432,14 @@
     "status": "Accept Food Donations",
     "notes": "70582936 Ali Charami",
     "pantryOnly": false,
-    "lat": 33.626281,
-    "lng": 35.7840064,
-    "locationLabel": "Joub Jannine, West Bekaa",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/5522106653",
+    "lat": 33.6244875,
+    "lng": 35.7880156,
+    "locationLabel": "Supplied pin · Joub Jannine, West Bekaa",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.6244875,35.7880156",
     "sourceUrl": "https://daleel-madani.org/civil-society-directory/rans-association",
-    "sourceNote": "Civil society record matches NGO name and phone 70095810 but does not list an address. Uses source Joub Jannine town.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1296,7 +1452,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.6244875,
+        "lng": 35.7880156,
+        "url": "https://www.google.com/maps?q=33.6244875,35.7880156"
+      }
+    ]
   },
   {
     "id": 85,
@@ -1310,14 +1474,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.6038255,
-    "lng": 35.8775281,
-    "locationLabel": "Mdoukha, Rashaya",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/7024216354",
+    "lat": 33.592487,
+    "lng": 35.854942,
+    "locationLabel": "Supplied pin · Mdoukha, Rashaya",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.5924870,35.8549420",
     "sourceUrl": "https://awqafrashaya.com/religious-education/",
-    "sourceNote": "Conflicting public references: source and older reporting say Mdoukha; recent ESCWA reporting and Rashaya Awqaf place Al Nabras at Kherbet Rouha. Retained source Mdoukha town pin pending direct confirmation; not an exact campus.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1330,7 +1494,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.592487,
+        "lng": 35.854942,
+        "url": "https://www.google.com/maps?q=33.5924870,35.8549420"
+      }
+    ]
   },
   {
     "id": 86,
@@ -1344,14 +1516,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.8172909,
-    "lng": 35.8676904,
-    "locationLabel": "Taalabaya, Zahle",
-    "precision": "town",
-    "coordinateSourceUrl": "https://www.openstreetmap.org/node/6329606679",
+    "lat": 33.8166125,
+    "lng": 35.8632969,
+    "locationLabel": "Supplied pin · Taalabaya, Zahle",
+    "precision": "address",
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8166125,35.8632969",
     "sourceUrl": "https://www.pcm.gov.lb/arabic/subpg.aspx?pageid=22881",
-    "sourceNote": "Official registration notice 449 dated 11 April 2023 identifies Nagham Hachem charity in Taalabaya, Zahle. Pin is town center only.",
-    "researched": true,
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
     "researchDate": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1364,7 +1536,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8166125,
+        "lng": 35.8632969,
+        "url": "https://www.google.com/maps?q=33.8166125,35.8632969"
+      }
+    ]
   },
   {
     "id": 88,
@@ -1372,7 +1552,7 @@
     "region": "Mount Lebanon",
     "district": "Aley",
     "nameAr": "بيت شانيه للمسنين الخيرية",
-    "addressAr": "بيت شانية",
+    "addressAr": "قضاء عالية، بلدة شانيه، شارع الدفيرين، داخل العقار رقم 1999 (ملك الشيخ سليم حمدان أبي المنى)، في الطابق الأرضي",
     "name": "Bait Shanay Association for Elderly Charity",
     "contact": "78 906 581",
     "status": "Accept Food Donations",
@@ -1383,7 +1563,7 @@
     "locationLabel": "Shanay",
     "precision": "town",
     "sourceUrl": "https://www.pcm.gov.lb/arabic/subpg.aspx?pageid=22228",
-    "sourceNote": "Official Lebanese gazette confirms association in Shanay, Aley. Village centroid; exact entrance not verified.",
+    "sourceNote": "NFS location update, 19 November 2026: exact premises remain unconfirmed. The displayed pin is an approximate area; contact the NGO before delivery.",
     "researched": true,
     "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Shanay%2C+Lebanon&format=json&limit=3&countrycodes=lb",
     "checkedAt": "2026-10-21",
@@ -1398,7 +1578,9 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "updatedAddress": "قضاء عالية، بلدة شانيه، شارع الدفيرين، داخل العقار رقم 1999 (ملك الشيخ سليم حمدان أبي المنى)، في الطابق الأرضي"
   },
   {
     "id": 90,
@@ -1412,14 +1594,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.7651856,
-    "lng": 35.4985373,
-    "locationLabel": "Aramoun",
-    "precision": "town",
+    "lat": 33.783231,
+    "lng": 35.488869,
+    "locationLabel": "Supplied pin · Aramoun",
+    "precision": "address",
     "sourceUrl": "https://www.crdp.org/sites/default/files/2020-11/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D8%B3%20%D8%A7%D9%84%D8%AF%D8%A7%D9%85%D8%AC%D8%A9_1.pdf",
-    "sourceNote": "Government education directory confirms Aramoun and matching phone. Dawhat el Chwayfat address also reported; town centroid, not the institution entrance.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Aramoun%2C+Lebanon&format=json&limit=3&countrycodes=lb",
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.7832310,35.4888690",
     "checkedAt": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1432,7 +1614,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.783231,
+        "lng": 35.488869,
+        "url": "https://www.google.com/maps?q=33.7832310,35.4888690"
+      }
+    ]
   },
   {
     "id": 92,
@@ -1440,7 +1630,7 @@
     "region": "Mount Lebanon",
     "district": "Aley",
     "nameAr": "جمعية المودة والإخاء",
-    "addressAr": "برجا",
+    "addressAr": "قضاء الشوف، برجا، طريق الجبانة، ملك محمد عبد الجليل الشمعة",
     "name": "Al Mawada Wal Ikhaa/ Mawaddah & Ikhaa Association",
     "contact": "76 747841",
     "status": "Accept Food Donations",
@@ -1451,7 +1641,7 @@
     "locationLabel": "Barja",
     "precision": "town",
     "sourceUrl": "https://moph.gov.lb/userfiles/files/HealthCareSystem/PHC/phcc.pdf",
-    "sourceNote": "2026 Ministry of Public Health directory lists matching 76 747841 contact at Noura Medical Center, Barja-Al Khazzan. Town centroid. Spreadsheet district Aley conflicts with Barja in Chouf.",
+    "sourceNote": "NFS location update, 19 November 2026: exact premises remain unconfirmed. The displayed pin is an approximate area; contact the NGO before delivery.",
     "researched": true,
     "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Barja%2C+Lebanon&format=json&limit=3&countrycodes=lb",
     "checkedAt": "2026-10-21",
@@ -1467,7 +1657,9 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "updatedAddress": "قضاء الشوف، برجا، طريق الجبانة، ملك محمد عبد الجليل الشمعة"
   },
   {
     "id": 94,
@@ -1481,14 +1673,14 @@
     "status": "Accept Food Donations",
     "notes": "70 092 816 Mohamad Majzoub Hilal",
     "pantryOnly": false,
-    "lat": 33.6275246,
-    "lng": 35.4869581,
-    "locationLabel": "Chhim",
-    "precision": "town",
+    "lat": 33.887503,
+    "lng": 35.487115,
+    "locationLabel": "Supplied pin · Chhim",
+    "precision": "address",
     "sourceUrl": "https://daleel-madani.org/civil-society-directory/lebanese-national-crescent-society",
-    "sourceNote": "NGO name found in civic directory; exact office location not established. Uses supplied Chhim town, which is in Chouf although sheet district says Aley.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=%D8%B4%D8%AD%D9%8A%D9%85%2C+%D9%84%D8%A8%D9%86%D8%A7%D9%86&format=json&limit=3&countrycodes=lb",
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8875030,35.4871150",
     "checkedAt": "2026-10-21",
     "geographicDistrict": "Chouf",
     "donationHours": {
@@ -1502,7 +1694,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.887503,
+        "lng": 35.487115,
+        "url": "https://www.google.com/maps?q=33.8875030,35.4871150"
+      }
+    ]
   },
   {
     "id": 95,
@@ -1516,14 +1716,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.7936434,
-    "lng": 35.5144572,
-    "locationLabel": "Deir Qoubel",
-    "precision": "town",
+    "lat": 33.8111375,
+    "lng": 35.5145156,
+    "locationLabel": "Supplied pin · Deir Qoubel",
+    "precision": "address",
     "sourceUrl": "https://willassociation.org.lb/contact/",
-    "sourceNote": "Official website confirms matching 76 457257 contact but gives Choueifat, Old Saida Road, facing Gandour Factory; conflicts with supplied Deir Qoubel. Retained supplied town centroid pending NGO confirmation.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Deir+Qoubel%2C+Lebanon&format=json&limit=3&countrycodes=lb",
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8111375,35.5145156",
     "checkedAt": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1544,7 +1744,15 @@
       "sourceUrl": "https://willassociation.org.lb/contact/",
       "checkedAt": "2026-10-29",
       "branchNote": "Published contact page refers to Choueifat; directory branch is Deir Qoubel. Confirm the branch."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8111375,
+        "lng": 35.5145156,
+        "url": "https://www.google.com/maps?q=33.8111375,35.5145156"
+      }
+    ]
   },
   {
     "id": 97,
@@ -1563,7 +1771,7 @@
     "locationLabel": "Hadath",
     "precision": "town",
     "sourceUrl": "https://www.archidiecezja.lodz.pl/aktualnosci/2026/10/caritas-al-i-dom-wschodni-w-libanie-2-hadath-przedmiescia-bejrutu",
-    "sourceNote": "Caritas partner visit confirms kitchen at Saint Antoine de Padoue parish in Hadath. Exact parish coordinates not verified; town centroid.",
+    "sourceNote": "NFS location update, 19 November 2026: exact premises remain unconfirmed. The displayed pin is an approximate area; contact the NGO before delivery.",
     "researched": true,
     "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Hadath%2C+Lebanon&format=json&limit=3&countrycodes=lb",
     "checkedAt": "2026-10-21",
@@ -1578,7 +1786,8 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19"
   },
   {
     "id": 106,
@@ -1597,7 +1806,7 @@
     "locationLabel": "Fidar",
     "precision": "town",
     "sourceUrl": "https://abyadaswad.com/_en/author/ptonyelkhoury/",
-    "sourceNote": "Founder profile identifies Fidar parish priest as founder/president. Supplied Fidar town centroid; exact NGO premises not verified.",
+    "sourceNote": "NFS location update, 19 November 2026: exact premises remain unconfirmed. The displayed pin is an approximate area; contact the NGO before delivery.",
     "researched": true,
     "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Fidar%2C+Lebanon&format=json&limit=3&countrycodes=lb",
     "checkedAt": "2026-10-21",
@@ -1612,7 +1821,8 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19"
   },
   {
     "id": 107,
@@ -1631,7 +1841,7 @@
     "locationLabel": "Baakline",
     "precision": "town",
     "sourceUrl": "https://nominatim.openstreetmap.org/search?q=Baakline%2C+Lebanon&format=json&limit=3&countrycodes=lb",
-    "sourceNote": "No reliable exact office location found after English and Arabic searches. Supplied Baakline town centroid.",
+    "sourceNote": "NFS location update, 19 November 2026: exact premises remain unconfirmed. The displayed pin is an approximate area; contact the NGO before delivery.",
     "researched": true,
     "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Baakline%2C+Lebanon&format=json&limit=3&countrycodes=lb",
     "checkedAt": "2026-10-21",
@@ -1646,7 +1856,8 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19"
   },
   {
     "id": 108,
@@ -1660,14 +1871,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.7858185,
-    "lng": 35.5426135,
-    "locationLabel": "Ain Anoub",
-    "precision": "town",
+    "lat": 33.786427,
+    "lng": 35.542416,
+    "locationLabel": "Supplied pin · Ain Anoub",
+    "precision": "address",
     "sourceUrl": "https://www.pseau.org/outils/experts-scientifiques/expert_resultat.php?cont__id=&pageNum_Rs_contact_liste=57&totalRows_Rs_contact_liste=14025&tout=1",
-    "sourceNote": "pS-Eau partner directory confirms association in Ain Anoub. Town centroid. Sheet says Chouf, whereas Ain Anoub is in Aley.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Ain+Anoub%2C+Lebanon&format=json&limit=3&countrycodes=lb",
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.7864270,35.5424160",
     "checkedAt": "2026-10-21",
     "geographicDistrict": "Aley",
     "donationHours": {
@@ -1681,7 +1892,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.786427,
+        "lng": 35.542416,
+        "url": "https://www.google.com/maps?q=33.7864270,35.5424160"
+      }
+    ]
   },
   {
     "id": 122,
@@ -1695,14 +1914,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.8778546,
-    "lng": 35.5376847,
-    "locationLabel": "Sin el Fil · Horsh Tabet",
-    "precision": "town",
+    "lat": 33.887902,
+    "lng": 35.538408,
+    "locationLabel": "Supplied pin · Sin el Fil · Horsh Tabet",
+    "precision": "address",
     "sourceUrl": "https://ecpat.org/country/lebanon/",
-    "sourceNote": "Partner ECPAT lists Ghazal Building, Horsh Tabet, near Lebanese University agriculture branch. Exact building not geocoded; Sin el Fil town centroid.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Sin+el+Fil%2C+Lebanon&format=json&limit=3&countrycodes=lb",
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8879020,35.5384080",
     "checkedAt": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1717,7 +1936,15 @@
       "checkedAt": "2026-10-29",
       "sourceUrl": "https://dar-alamal.org/",
       "note": "No confirmed donation reception schedule obtained. Contact the receiving branch."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.887902,
+        "lng": 35.538408,
+        "url": "https://www.google.com/maps?q=33.8879020,35.5384080"
+      }
+    ]
   },
   {
     "id": 123,
@@ -1731,14 +1958,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.8778546,
-    "lng": 35.5376847,
-    "locationLabel": "Sin el Fil · Youssef Karam Street",
-    "precision": "town",
+    "lat": 33.8822125,
+    "lng": 35.5371406,
+    "locationLabel": "Supplied pin · Sin el Fil · Youssef Karam Street",
+    "precision": "address",
     "sourceUrl": "https://afel.org.lb/fr/contacts/",
-    "sourceNote": "Official AFEL contact page lists Sin el Fil, Youssef Karam Street. Pin is town centroid, not street/building entrance. Sheet also lists Ashkout; one record retained, not duplicated.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Sin+el+Fil%2C+Lebanon&format=json&limit=3&countrycodes=lb",
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8822125,35.5371406",
     "checkedAt": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1753,7 +1980,15 @@
       "checkedAt": "2026-10-29",
       "sourceUrl": "https://afel.org.lb/fr/contacts/",
       "note": "No confirmed donation reception schedule obtained. Contact the receiving branch."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.8822125,
+        "lng": 35.5371406,
+        "url": "https://www.google.com/maps?q=33.8822125,35.5371406"
+      }
+    ]
   },
   {
     "id": 124,
@@ -1839,14 +2074,14 @@
     "status": "Accept Food Donations",
     "notes": "معلبات ، مونة only",
     "pantryOnly": true,
-    "lat": 33.899265,
-    "lng": 35.6044683,
-    "locationLabel": "Bsalim",
-    "precision": "town",
+    "lat": 33.9012625,
+    "lng": 35.6057031,
+    "locationLabel": "Supplied pin · Bsalim",
+    "precision": "address",
     "sourceUrl": "https://lebanesefoodbank.org/assets/attachments/List-of-NGOs-2021.pdf",
-    "sourceNote": "Lebanese Food Bank list also places Abnaa El Nour in Bsalim. Uses town centroid; office entrance unverified.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Bsalim%2C+Lebanon&format=json&limit=3&countrycodes=lb",
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.9012625,35.6057031",
     "checkedAt": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1859,7 +2094,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.9012625,
+        "lng": 35.6057031,
+        "url": "https://www.google.com/maps?q=33.9012625,35.6057031"
+      }
+    ]
   },
   {
     "id": 129,
@@ -1896,74 +2139,6 @@
     }
   },
   {
-    "id": 131,
-    "row": 66,
-    "region": "Mount Lebanon",
-    "district": "Metn",
-    "nameAr": "كبارنا كنز الحياة (دار مسنين)",
-    "addressAr": "بسكنتا",
-    "name": "Kibarouna Kanzou El Hayat",
-    "contact": "03 343 343",
-    "status": "Accept Food Donations",
-    "notes": "",
-    "pantryOnly": false,
-    "lat": 33.9450012,
-    "lng": 35.7880099,
-    "locationLabel": "Baskinta",
-    "precision": "town",
-    "sourceUrl": "https://nominatim.openstreetmap.org/search?q=Baskinta%2C+Lebanon&format=json&limit=3&countrycodes=lb",
-    "sourceNote": "Association existence found in Lebanese Court of Audit sponsorship report; no reliable exact office located. Uses supplied Baskinta town centroid.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Baskinta%2C+Lebanon&format=json&limit=3&countrycodes=lb",
-    "checkedAt": "2026-10-21",
-    "donationHours": {
-      "kind": "donation",
-      "verified": false,
-      "weekly": {},
-      "exceptions": {},
-      "sourceUrl": null,
-      "verifiedAt": null
-    },
-    "hoursResearch": {
-      "status": "not_reviewed",
-      "note": "Donation reception hours require direct confirmation."
-    }
-  },
-  {
-    "id": 132,
-    "row": 67,
-    "region": "Mount Lebanon",
-    "district": "Metn",
-    "nameAr": "جمعية مار منصور",
-    "addressAr": "ضبية",
-    "name": "The Society of Saint Vincent de Paul - Lebanon",
-    "contact": "03 205 481",
-    "status": "Accept Food Donations",
-    "notes": "",
-    "pantryOnly": false,
-    "lat": 33.9388314,
-    "lng": 35.591187,
-    "locationLabel": "Dbayeh",
-    "precision": "town",
-    "sourceUrl": "https://stvincentlb.org/institutions/",
-    "sourceNote": "Official organization found; exact Dbayeh conference entrance not verified. Uses supplied town centroid.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Dbayeh%2C+Lebanon&format=json&limit=3&countrycodes=lb",
-    "checkedAt": "2026-10-21",
-    "donationHours": {
-      "kind": "donation",
-      "verified": false,
-      "weekly": {},
-      "exceptions": {},
-      "sourceUrl": null,
-      "verifiedAt": null
-    },
-    "hoursResearch": {
-      "status": "not_reviewed",
-      "note": "Donation reception hours require direct confirmation."
-    }
-  },
-  {
     "id": 133,
     "row": 68,
     "region": "Mount Lebanon",
@@ -1975,14 +2150,14 @@
     "status": "Accept Food Donations",
     "notes": "معلبات ، مونة only",
     "pantryOnly": true,
-    "lat": 33.9941111,
-    "lng": 35.6562772,
-    "locationLabel": "Sahel Alma · Jounieh",
-    "precision": "area",
+    "lat": 33.986913,
+    "lng": 35.64805,
+    "locationLabel": "Supplied pin · Sahel Alma · Jounieh",
+    "precision": "address",
     "sourceUrl": "https://www.centrecatholique.org/%D8%A7%D9%84%D9%88%D8%B1%D8%B4%D8%A7-%D8%B2%D8%A7%D8%B1-%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D9%8A%D9%86%D8%A8%D9%88%D8%B9-%D9%81%D9%8A-%D8%B3%D8%A7%D8%AD%D9%84-%D8%B9%D9%84%D9%85%D8%A7-%D9%88/%D9%85%D9%86%D9%88%D8%B9%D8%A7%D8%AA/",
-    "sourceNote": "May 2026 Catholic Information Center/National News Agency account locates center in Sahel Alma; older directories list Ghadir/Haret Sakhr. Sahel Alma area centroid; not exact center entrance.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Sahel+Alma%2C+Lebanon&format=json&limit=3&countrycodes=lb",
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.9869130,35.6480500",
     "checkedAt": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -1995,7 +2170,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.986913,
+        "lng": 35.64805,
+        "url": "https://www.google.com/maps?q=33.9869130,35.6480500"
+      }
+    ]
   },
   {
     "id": 134,
@@ -2045,14 +2228,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 34.0266183,
-    "lng": 35.6540175,
-    "locationLabel": "Adma · Jounieh",
-    "precision": "town",
+    "lat": 33.972542,
+    "lng": 35.618923,
+    "locationLabel": "Supplied pin · Adma · Jounieh",
+    "precision": "address",
     "sourceUrl": "https://nominatim.openstreetmap.org/search?q=Adma%2C+Lebanon&format=json&limit=3&countrycodes=lb",
-    "sourceNote": "No exact matching NGO premises verified. Supplied Adma town centroid retained; a secondary listing says Beit Chaar and may be a different/older office.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Adma%2C+Lebanon&format=json&limit=3&countrycodes=lb",
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.9725420,35.6189230",
     "checkedAt": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -2065,7 +2248,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.972542,
+        "lng": 35.618923,
+        "url": "https://www.google.com/maps?q=33.9725420,35.6189230"
+      }
+    ]
   },
   {
     "id": 139,
@@ -2079,14 +2270,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.9701266,
-    "lng": 35.6213958,
-    "locationLabel": "Zouk Mikael",
-    "precision": "town",
+    "lat": 33.886978,
+    "lng": 35.545605,
+    "locationLabel": "Supplied pin · Bourj Hammoud (confirm branch)",
+    "precision": "address",
     "sourceUrl": "https://stvincentlb.org/september-22-post-2/",
-    "sourceNote": "Official organization mentions Zouk Mikael kindergarten/night school. Town centroid; exact donation contact entrance not verified.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Zouk+Mikael%2C+Lebanon&format=json&limit=3&countrycodes=lb",
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements. The supplied pin differs from the original source area (Zouk Mikael, Mount Lebanon); confirm the correct branch before travelling.",
+    "researched": false,
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.8869780,35.5456050",
     "checkedAt": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -2099,7 +2290,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.886978,
+        "lng": 35.545605,
+        "url": "https://www.google.com/maps?q=33.8869780,35.5456050"
+      }
+    ]
   },
   {
     "id": 141,
@@ -2113,14 +2312,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.9515214,
-    "lng": 35.6698557,
-    "locationLabel": "Ballouneh",
-    "precision": "town",
+    "lat": 33.979805,
+    "lng": 35.6223984,
+    "locationLabel": "Supplied pin · Ballouneh",
+    "precision": "address",
     "sourceUrl": "https://lebanon.unfpa.org/sites/default/files/pub-pdf/UNFPA-Tanseeq-1-Newsletter-English.pdf",
-    "sourceNote": "UNFPA historical directory gives Ajaltoun, Darayya Road, matching 03 553121 contact. Sheet says nearby Ballouneh; uses supplied Ballouneh centroid pending current location confirmation.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Ballouneh%2C+Lebanon&format=json&limit=3&countrycodes=lb",
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.9798050,35.6223984",
     "checkedAt": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -2133,7 +2332,15 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.979805,
+        "lng": 35.6223984,
+        "url": "https://www.google.com/maps?q=33.9798050,35.6223984"
+      }
+    ]
   },
   {
     "id": 142,
@@ -2147,14 +2354,14 @@
     "status": "Accept Food Donations",
     "notes": "",
     "pantryOnly": false,
-    "lat": 33.9621684,
-    "lng": 35.6865307,
-    "locationLabel": "Ajaltoun",
-    "precision": "town",
+    "lat": 33.966068,
+    "lng": 35.688385,
+    "locationLabel": "Supplied pin · Ajaltoun",
+    "precision": "address",
     "sourceUrl": "https://www.gov.pl/web/liban/wizyta-wice-ministra-spraw-zagranicznych-rp-w-libanie",
-    "sourceNote": "September 2026 Polish foreign ministry visit confirms Adventure of Charity projects in Ajaltoun. Town centroid; exact office entrance unverified.",
-    "researched": true,
-    "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?q=Ajaltoun%2C+Lebanon&format=json&limit=3&countrycodes=lb",
+    "sourceNote": "Location supplied in the NFS update on 19 November 2026. Contact the NGO to confirm the receiving premises and delivery arrangements.",
+    "researched": false,
+    "coordinateSourceUrl": "https://www.google.com/maps?q=33.9660680,35.6883850",
     "checkedAt": "2026-10-21",
     "donationHours": {
       "kind": "donation",
@@ -2167,6 +2374,14 @@
     "hoursResearch": {
       "status": "not_reviewed",
       "note": "Donation reception hours require direct confirmation."
-    }
+    },
+    "locationUpdatedAt": "2026-11-19",
+    "locationOptions": [
+      {
+        "lat": 33.966068,
+        "lng": 35.688385,
+        "url": "https://www.google.com/maps?q=33.9660680,35.6883850"
+      }
+    ]
   }
 ]

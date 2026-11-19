@@ -50,5 +50,6 @@ await fs.writeFile(indexFile,versionLinks(await fs.readFile(indexFile,'utf8')));
 await fs.writeFile(path.join(target,'build-info.json'),JSON.stringify({revision,basePath,main:versions.get('index-C_9D0gYg.js'),stylesheet:versions.get('index-iZUFSccV.css'),visitorClient:versions.get('visitor-tracking.js')}));
 await fs.writeFile(path.join(target, '.nojekyll'), '');
 const records = JSON.parse(await fs.readFile(path.join(target, 'data/ngos.json'), 'utf8'));
-if (records.length !== 63) throw Error('Missing NGO data');
-console.log(`GitHub Pages review prepared at ${basePath}: 63 NGOs, 3D atlas, street map and shared estimated visitor tracking.`);
+const version=JSON.parse(await fs.readFile(path.join(target,'data/directory-version.json'),'utf8'));
+if(records.length!==version.activeCount)throw Error('Missing active NGO data');
+console.log(`GitHub Pages review prepared at ${basePath}: ${records.length} NGOs, 3D atlas, street map and shared estimated visitor tracking.`);

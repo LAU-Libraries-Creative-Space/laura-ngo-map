@@ -10171,7 +10171,7 @@ Error generating stack: ` + e.message + `
     Nabatieh: [35.57, 33.32]
   },
   A = e => ({
-    address: `Researched address`,
+    address: `Supplied or researched pin`,
     area: `Approximate area`,
     town: `Approximate town`,
     region: `Approximate region`
@@ -10245,7 +10245,7 @@ function Be() {
       })]
     }), (0, j.jsx)(`p`, {
       className: `credits-intro`,
-      children: `Connecting surplus food with communities across Lebanon.`
+      children: `An informational directory of independent NGOs in Lebanon.`
     }), (0, j.jsxs)(`section`, {
       children: [(0, j.jsx)(`h3`, {
         children: `Initiated in Collaboration With`
@@ -10853,6 +10853,18 @@ function dt() {
             })]
           })]
         }), (0, j.jsx)(Qe, {})]
+      }), (0, j.jsxs)('aside', {
+        className: 'directory-notice',
+        'aria-labelledby': 'directory-notice-title',
+        children: [(0, j.jsx)('h2', {
+          id: 'directory-notice-title',
+          children: 'Important Notice'
+        }), (0, j.jsx)('p', {
+          children: "This platform is an informational directory only. LAU does not manage food donations, endorse, or affiliate with any listed NGO, or assume responsibility for donation arrangements or outcomes. Donors must contact the NGO directly before making any donation to confirm acceptance conditions and the exact location."
+        }), (0, j.jsx)('a', {
+          href: './terms.html',
+          children: 'Terms of Use and Disclaimer'
+        })]
       }), (0, j.jsxs)(`section`, {
         id: `explore`,
         className: `explorer`,
@@ -11095,6 +11107,9 @@ function dt() {
                   size: 15,
                   fill: u.includes(e.id) ? `currentColor` : `none`
                 })
+              }), (0, j.jsx)('p', {
+                className: 'card-contact-reminder',
+                children: 'Contact this NGO before delivery to confirm acceptance and the exact location.'
               })]
             }, e.id))
           }), (0, j.jsxs)(`div`, {
@@ -11203,7 +11218,7 @@ function dt() {
             children: [(0, j.jsxs)(`span`, {
               children: [(0, j.jsx)(`i`, {
                 className: `legend-pin`
-              }), `Researched address`]
+              }), `Supplied or researched pin`]
             }), (0, j.jsxs)(`span`, {
               children: [(0, j.jsx)(`i`, {
                 className: `legend-pin approx`
@@ -11307,7 +11322,7 @@ function dt() {
           children: [(0, j.jsx)('h2', {
             children: 'Would your foundation like to be listed?'
           }), (0, j.jsx)('p', {
-            children: 'To request adding your foundation to the map, email the NFS team.'
+            children: "For listing requests, corrections or updates to your NGO’s details, email nfs@lau.edu.lb. Requests are subject to LAU review and do not establish affiliation or partnership."
           })]
         }), (0, j.jsx)('a', {
           href: 'mailto:Nfs@lau.edu.lb?subject=Foundation%20listing%20request',
@@ -11336,6 +11351,10 @@ function dt() {
               size: 13
             })]
           })]
+        }), (0, j.jsx)('a', {
+          className: 'terms-link',
+          href: './terms.html',
+          children: 'Terms of Use and Disclaimer'
         })]
       })]
     }), se && (0, j.jsxs)(`div`, {
@@ -11364,7 +11383,7 @@ function dt() {
           className: `modal-lead`,
           children: `Good food brings us together. LAURA Food Donation helps it reach a little further.`
         }), (0, j.jsx)(`p`, {
-          children: `Created for Dr. Rana Rizk and NFS, this interactive directory brings together NGOs across Lebanon that accept food donations, using the list compiled by Nutrition & Food Sciences.`
+          children: `An NFS informational directory of independent NGOs that may accept food donations. Donors must contact NGOs directly; LAU does not arrange donations or endorse listed organizations.`
         }), (0, j.jsx)(`p`, {
           children: `It gives individuals, wedding planners, caterers, and event organizers a practical starting point for sharing surplus food and reducing food waste.`
         }), (0, j.jsxs)(`div`, {
@@ -11494,7 +11513,7 @@ function ft({
       children: e.nameAr
     }), (0, j.jsxs)(`div`, {
       className: "detail-status plain-status",
-      children: [e.pantryOnly ? `Canned & pantry food only` : `Listed as accepting food donations`]
+      children: [e.pantryOnly ? `Canned & pantry food only` : `Contact NGO to confirm acceptance`]
     }), (0, j.jsx)($e, {
       ngo: e,
       now: s
@@ -11510,7 +11529,7 @@ function ft({
           children: [e.locationLabel, (0, j.jsxs)(`small`, {
             lang: `ar`,
             dir: `auto`,
-            children: [`Sheet address: `, e.addressAr]
+            children: [e.updatedAddress ? `Updated address: ` : `Sheet address: `, e.updatedAddress || e.addressAr]
           })]
         })]
       }), (0, j.jsxs)(`div`, {
@@ -11522,7 +11541,7 @@ function ft({
         className: `location-note`,
         children: e.sourceNote
       }), e.sourceUrl && (0, j.jsxs)(`a`, {
-        href: e.sourceUrl,
+        href: e.coordinateSourceUrl || e.sourceUrl,
         target: `_blank`,
         rel: `noreferrer`,
         className: `source-link`,
@@ -11563,7 +11582,7 @@ function ft({
         })]
       }), (0, j.jsx)(`p`, {
         className: `call-note`,
-        children: `For further clarification, please call this foundation directly. Confirm accepted food, quantities, receiving times and the exact drop-off point before travelling.`
+        children: 'Before delivery, contact this NGO directly to confirm that it is accepting donations, the accepted food types and conditions, its exact location and delivery arrangements. LAU does not arrange or oversee donations.'
       }), (0, j.jsxs)(`details`, {
         className: `original-contact`,
         children: [(0, j.jsx)(`summary`, {
@@ -11594,6 +11613,18 @@ function ft({
           size: 13
         }), ` Share this NGO`]
       })]
+    }), e.locationOptions?.length > 1 && (0, j.jsxs)('section', {
+      className: 'detail-section alternate-locations',
+      children: [(0, j.jsx)('h4', {
+        children: 'SUPPLIED LOCATIONS'
+      }), (0, j.jsx)('p', {
+        children: 'More than one location was supplied. Call the NGO to confirm which branch can receive your donation.'
+      }), ...e.locationOptions.map((place, index) => (0, j.jsx)('a', {
+        href: place.url,
+        target: '_blank',
+        rel: 'noreferrer',
+        children: 'Location ' + (index + 1)
+      }, place.url))]
     })]
   });
 }
